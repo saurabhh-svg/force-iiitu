@@ -1,70 +1,175 @@
-# Getting Started with Create React App
+# FORCE-Forum of Computer Engineers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FORCE is the association of computer science in IIIT Una. Our main objective is to encourage open source software,improving coding culture,project building and introducing new platforms to work on. It provides opportunities for students to broaden their knowledge in the field of computer science and interact with other students who have shared interests
 
-## Available Scripts
+<p align="center">
+<img src="./src/images/favicon.png" />
+</p>
 
-In the project directory, you can run:
+### Why you should join our community
 
-### `npm start`
+-   To improve your coding skills
+-   To become a full stack developer.
+-   To excel at graphic designing.
+-   To improve your speaking skills.
+-   To learn teamwork
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## What We Do?
 
-### `npm test`
+FORCE is the association of computer science enthusiasts of IIITU,aimed at lending a helping hand to all the beginners in the world of programming.We have BITERATION,a student chapter on codechef of IIIT Una to provide students a platform to compete against the best of minds. Our other events include short and long challenges,a technical fest MERAKI and a yearly hackathon.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Workshops
 
-### `npm run build`
+We regularly organize workshops over different stacks that will be helpful in your entire college life, that will cover tech, non-tech and professional events.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Some Previous Workshops that We Organize
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   Web Development
+-   Android Development
+-   Flutter Development
+-   React
+-   Resume Building
+-   Git and Github
+-   And many more workshops we organize and cover all stacks.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Events
 
-### `npm run eject`
+Force always organizes many events in different areas. Some of the events are given below:-
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-   Workshops
+-   Career guidance sessions
+-   Resume reviews
+-   Coding Events
+-   Hackathons
+-   Team Work
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Force is all about learning and working as a team. We provide equal opportunity while working in a team and it is a great experience for everyone.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> If everyone is moving forward together, then success takes care of itself : Henry Ford
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## FAQs
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   Does the Force organize events?
+-   When will the force organize workshops?
+-   Does the Force organize non-tech events?
+-   Is IIITU college website handled by the Force club?
+-   When will MERAKI be conducted?
+-   Force Alumni With Position
+-   Alumni Image With Name and Positions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Code Of Conduct
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+In FORCE we maintain a high level of respect towards everyone and we expect everyone to follow our Code Of Conduct.
 
-### Analyzing the Bundle Size
+-   Be friendly and welcoming
+-   Be patient Remember that people have varying communication styles and that not everyone is using their native language. (Meaning and tone can be lost in translation.)
+-   Being thoughtful Productive communication requires effort. Think about how your words will be interpreted.
+-   Remember that sometimes it is best to refrain entirely from commenting.
+-   Be respectful In particular, respect differences of opinion.
+-   Be charitable: Interpret the arguments of others in good faith, do not seek to disagree.
+-   When we do disagree, try to understand why.
+-   Avoid destructive behavior: Derailing: stay on topic; if you want to talk about something else, start a new conversation.
+-   Unconstructive criticism: don’t merely decry the current state of affairs; offer—or at least solicit—suggestions as to how things may be improved.
+-   Snarking (pithy, unproductive, sniping comments)
+-   Discussing potentially offensive or sensitive issues; this all too often leads to unnecessary conflict.
+-   Microaggressions: brief and commonplace verbal, behavioral and environmental indignities that communicate hostile, derogatory or negative slights and insults to a person or group
+-   Be mindful of your language. Any of the following behavior is unacceptable
+-   Offensive comments related to gender identity and expression, sexual orientation, race, ethnicity, language, neuro-type, size, ability, class, religion, culture, subculture, political opinion, age, skill level, occupation, or background
+-   Threats of violence
+-   Deliberate intimidation.
+-   Sexually explicit or violent material
+-   Unwelcome sexual attention
+-   Stalking or following
+-   Or any other kinds of harassment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## HONORS AND ACHIEVEMENTS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Smart India Hackathon
 
-### Advanced Configuration
+-   Team 1
+    -   Shubham Kamboj
+    -   Arpana Mehta
+    -   Mratyunjay Soni
+    -   Anurag Chandel
+    -   Devesh Singh
+    -   Abhijeet Rai
+-   Team 2
+    -   Priyank Kumar Gupta
+    -   Pradeep Kumar
+    -   Kritagya Khandewal
+    -   Kaish Ansari
+    -   Anshu Akansha
+    -   Ayushi Agrawal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### ACM-ICPC
 
-### Deployment
+-   Team 1
+    -   Amit Yadav
+    -   Udit Gulati
+    -   Anurag Bansal
+-   Team 2
+    -   Jatin Nagpal
+    -   Anany Sharma
+    -   Anant Kumar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### GSOC
 
-### `npm run build` fails to minify
+-   Shivam Tripathi
+-   Udit Gulati
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Contact Details:
+
+-   Web: [force-iiitu.netlify.app](https://force-iiitu.netlify.app)
+-   Email: [clubforce@iiitu.ac.in](mailto:clubforce@iiitu.ac.in)
+
+## Data:
+
+-   **Team members** - [team.js](./src/team.js)
+-   **Images** - [Team Images](./src/team/)
+-   **Website content** - https://docs.google.com/document/d/1yDtAeGRE9QR8xz6gRWB2BM11B0aNZgGE1F616oJ5BhU/edit?usp=sharing
+
+---
+
+## For local developent
+
+### Clone the repository in you local machine
+
+```sh
+git clone https://github.com/akshatmittal61/force-iiitu.git
+```
+
+### Enter the 'force-iiitu' directory
+
+```sh
+cd force-iiitu
+```
+
+### Install the dependencies
+
+```sh
+npm i
+```
+
+### Start the local dev server
+
+```sh
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the website
+
+# Author
+
+[Akshat Mittal](https://github.com/akshatmittal61)
+
+# Contributors
