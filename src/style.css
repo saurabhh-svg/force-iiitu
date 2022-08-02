@@ -45,6 +45,21 @@
   	0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
   --shadow-elevation-24dp: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
   	0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.4);
+  --font-regular: "Gilroy-Regular", Cabin, -apple-system, BlinkMacSystemFont,
+  	"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+  	"Helvetica Neue", sans-serif;
+  --font-bold: "Gilroy-Bold", Cabin, -apple-system, BlinkMacSystemFont,
+  	"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+  	"Helvetica Neue", sans-serif;
+  --font-light: "Gilroy-Light", Cabin, -apple-system, BlinkMacSystemFont,
+  	"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+  	"Helvetica Neue", sans-serif;
+  --font-medium: "Gilroy-Medium", Cabin, -apple-system, BlinkMacSystemFont,
+  	"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+  	"Helvetica Neue", sans-serif;
+  --font-thin: "Gilroy-Thin", Cabin, -apple-system, BlinkMacSystemFont,
+  	"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+  	"Helvetica Neue", sans-serif;
   --red: #f44336;
   --red-100: #ffcdd2;
   --red-400: #ef5350;
@@ -409,7 +424,7 @@ html {
 
 body,
 #root {
-  font-family: "Gilroy-Regular", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--font-regular);
   font-size: 1rem;
   background-color: var(--bgcolor);
   color: var(--tcolor);
