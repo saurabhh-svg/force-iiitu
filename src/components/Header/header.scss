@@ -1,0 +1,32 @@
+.header {
+	width: 100%;
+	height: var(--head-height);
+	background-color: aqua;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+	&-left {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&-image {
+			width: var(--head-height);
+			height: var(--head-height);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+        &-content{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: flex-start;
+            &__name{
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+	}
+}

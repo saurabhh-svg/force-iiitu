@@ -23,6 +23,7 @@
   --primary-3: #575959;
   --primary-4: #f2600c;
   --primary-5: #0d0d0d;
+  --head-height: 6rem;
   --back-shadow: rgba(0, 0, 0, 0.2);
   --back-shadow-light: rgba(0, 0, 0, 0.1);
   --back-shadow-dark: rgba(0, 0, 0, 0.25);
@@ -391,6 +392,12 @@ body,
 main {
   width: 100%;
   min-height: calc(100vh - var(--head-height));
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 svg {
