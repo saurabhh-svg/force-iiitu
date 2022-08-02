@@ -1,31 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import favicon from "../../images/favicon.png";
+import navLinks from "../../utils/navigation";
 import "./header.css";
 
 const Header = ({ style }) => {
-	const navLinks = [
-		{
-			link: "/",
-			text: "Home",
-		},
-		{
-			link: "/team",
-			text: "Team",
-		},
-		{
-			link: "/events",
-			text: "Events",
-		},
-		{
-			link: "/gallery",
-			text: "Gallery",
-		},
-		{
-			link: "/contact",
-			text: "Contact Us",
-		},
-	];
 	return (
 		<header className="header" style={style}>
 			<div className="header-left">

@@ -39,6 +39,21 @@
   position: relative;
   z-index: 1;
 }
+.footer-right-top-left {
+  width: 50%;
+  height: 100%;
+}
+.footer-right-top-left ul {
+  list-style: none;
+}
+.footer-right-top-left ul li {
+  margin: 1rem 0;
+  font-size: 1.35rem;
+  line-height: 1.75rem;
+}
+.footer-right-top-left ul li a:hover {
+  text-decoration: underline;
+}
 .footer-right-top-text {
   width: fit-content;
   font-size: 2.5rem;
@@ -81,6 +96,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  border-top: 2px solid var(--back-shadow-light);
 }
 .footer-right-bottom a {
   width: 3.5rem;
