@@ -1,10 +1,26 @@
 .home {
-	&-hero {
+	section {
 		width: 100vw;
 		height: 100vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: relative;
+		&::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 25vw;
+			height: 25vw;
+			background-color: #1d79f2;
+			position: absolute;
+			opacity: 0.2;
+			filter: blur(220px);
+		}
+	}
+	&-hero {
 		background-color: #111010;
 		overflow-y: hidden;
 		padding-top: 5rem;
@@ -41,7 +57,7 @@
 			&__buttons {
 				margin: 2rem 0;
 				button {
-					margin: 0 1.5rem 0 0;
+					margin: 1rem 1.5rem 0 0;
 				}
 			}
 			&-socials {
@@ -58,8 +74,6 @@
 		}
 	}
 	&-about {
-		width: 100vw;
-		height: 100vh;
 		background-image: repeating-linear-gradient(
 			to right,
 			var(--bgcolor-700),
@@ -67,25 +81,8 @@
 			transparent 1px,
 			transparent
 		);
-		position: relative;
 		background-size: 250px 250px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		flex-flow: column;
-		&::before {
-			position: absolute;
-			content: "";
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 25vw;
-			height: 25vw;
-			background-color: #1d79f2;
-			position: absolute;
-			opacity: 0.2;
-			filter: blur(220px);
-		}
 		&-head {
 			width: 80%;
 			font-size: 3rem;

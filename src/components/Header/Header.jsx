@@ -10,16 +10,16 @@ const Header = ({ style }) => {
 			text: "Home",
 		},
 		{
-			link: "/about",
-			text: "About",
-		},
-		{
 			link: "/team",
 			text: "Team",
 		},
 		{
 			link: "/events",
 			text: "Events",
+		},
+		{
+			link: "/gallery",
+			text: "Gallery",
 		},
 		{
 			link: "/contact",

@@ -51,12 +51,13 @@ const Home = () => {
 						className="home-hero-content-socials"
 						data-aos="fade-up"
 					>
-						{socials.map((social) => (
+						{socials.map((social, id) => (
 							<a
 								href={social.link}
 								title={social.text + "/" + social.username}
 								target="_blank"
 								rel="noreferrer"
+								key={id}
 							>
 								{social.icon}
 							</a>
@@ -128,6 +129,7 @@ const Home = () => {
 					</ul>
 					<img
 						src={teamwork}
+						data-aos="zoom-in"
 						alt="Team Work"
 						className="home-about-content-joinimg"
 					/>

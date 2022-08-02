@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,7 +8,9 @@
   scroll-behavior: smooth;
 }
 
-:root {
+:root,
+:root::before,
+:root::after {
   --bgcolor: #f0f0f0;
   --bgcolor-100: #e1e1e1;
   --bgcolor-400: #d2d2d2;
