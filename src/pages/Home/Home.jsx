@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Button from "../../components/Button/Button";
 import man from "../../images/man.svg";
+import teamwork from "../../images/teamwork.svg";
 import socials from "../../utils/socials";
 import "./home.css";
 import Dots from "../../images/Dots";
@@ -65,7 +66,7 @@ const Home = () => {
 			</section>
 			<section className="home-about">
 				<Dots className="home-about-topimg" />
-				<div className="home-about-head">
+				<div className="home-about-head" data-aos="fade-right">
 					<h1>
 						Who we are?
 						<Dots fill="#A1BDE0" className="home-about-head-dots" />
@@ -84,6 +85,52 @@ const Home = () => {
 						the field of computer science and interact with other
 						student who have shared interest.
 					</p>
+				</div>
+			</section>
+			<section className="home-about">
+				<Dots className="home-about-topimg" />
+				<div className="home-about-head" data-aos="fade-left">
+					<h1>
+						What we do?
+						<Dots fill="#A1BDE0" className="home-about-head-dots" />
+					</h1>
+				</div>
+				<div className="home-about-content">
+					<p>
+						FORCE is the association of computer science enthusiasts
+						of IIITU, aimed at lending a helping hand to all the
+						beginners in the world of programming.
+					</p>
+					<p>
+						We have BITERATION,a student chapter on codechef of IIIT
+						Una to provide students a platform to compete against
+						the best of minds.Our other events include short and
+						long challenges,a technical fest MERAKI and a yearly
+						hackathon.
+					</p>
+				</div>
+			</section>
+			<section className="home-about">
+				<Dots className="home-about-topimg" />
+				<div className="home-about-head" data-aos="fade-right">
+					<h1>
+						Why you should join us?
+						<Dots fill="#A1BDE0" className="home-about-head-dots" />
+					</h1>
+				</div>
+				<div className="home-about-content">
+					<ul className="home-about-content-ul">
+						<li>To enhance your CODING SKILLS</li>
+						<li>To persue future in FULL STACK DEVELOPMENT </li>
+						<li>To excel at GRAPHIC DESIGNING</li>
+						<li>To enhance your SPEAKING SKILLS </li>
+						<li>To learn TEAMWORK</li>
+					</ul>
+					<img
+						src={teamwork}
+						alt="Team Work"
+						className="home-about-content-joinimg"
+					/>
 				</div>
 			</section>
 		</main>
