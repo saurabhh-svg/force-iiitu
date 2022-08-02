@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../components/Button/Button";
 import man from "../../images/man.svg";
+import socials from "../../utils/socials";
 import "./home.css";
 
 const Home = () => {
@@ -29,6 +30,18 @@ const Home = () => {
 							link="/contact"
 						/>
 					</span>
+					<div className="home-hero-content-socials">
+						{socials.map((social) => (
+							<a
+								href={social.link}
+								title={social.text + "/" + social.username}
+								target="_blank"
+								rel="noreferrer"
+							>
+								{social.icon}
+							</a>
+						))}
+					</div>
 				</div>
 			</section>
 		</main>
