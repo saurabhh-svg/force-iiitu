@@ -85,14 +85,12 @@
 		flex-flow: column;
 		&-head {
 			width: 80%;
-			font-size: 3rem;
-			line-height: 3.5rem;
 			margin: 3rem 0;
 			color: var(--indigo-700);
 			text-transform: uppercase;
 			font-family: var(--font-bold);
 			display: flex;
-			justify-content: flex-start;
+			justify-content: space-between;
 			align-items: center;
 			&[data-aos="fade-left"] {
 				justify-content: flex-end;
@@ -100,6 +98,8 @@
 			h1 {
 				position: relative;
 				display: inline;
+				font-size: 3rem;
+				line-height: 3.5rem;
 			}
 			&-dots {
 				position: absolute;
@@ -144,5 +144,8 @@
 			top: 3rem;
 			left: 3rem;
 		}
+	}
+	&-team {
+		background-color: #111010;
 	}
 }

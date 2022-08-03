@@ -5,6 +5,7 @@ import teamwork from "../../images/teamwork.svg";
 import socials from "../../utils/socials";
 import "./home.css";
 import Dots from "../../images/Dots";
+import { ArrowRight } from "react-feather";
 
 const Home = () => {
 	useEffect(() => {
@@ -38,7 +39,7 @@ const Home = () => {
 						<Button
 							text="Know More"
 							color="light-blue"
-							link="/about"
+							link="/events"
 						/>
 						<Button
 							text="Contact Us"
@@ -110,6 +111,22 @@ const Home = () => {
 						hackathon.
 					</p>
 				</div>
+			</section>
+			<section className="home-team">
+				<div className="home-about-head" data-aos="fade-right">
+					<h1 style={{ color: "var(--indigo-100)" }}>Our Team</h1>
+					<Button
+						variant="outline"
+						text={
+							<>
+								View All <ArrowRight />
+							</>
+						}
+						link="/team"
+						color="light-blue"
+					/>
+				</div>
+				<div className="home-team-body"></div>
 			</section>
 			<section className="home-about">
 				<Dots className="home-about-topimg" />
