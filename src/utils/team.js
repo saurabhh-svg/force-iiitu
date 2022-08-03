@@ -1,6 +1,8 @@
+import allPeople from "./people";
+
 let team = [];
 
-let parsedTeam = [];
+let parsedTeam = allPeople;
 
 parsedTeam.forEach((e) => {
 	let parsedObj = {
