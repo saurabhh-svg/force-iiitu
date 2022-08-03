@@ -1,0 +1,38 @@
+.team-hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--head-height);
+}
+.team-hero-head {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.team-hero-head span:first-child {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-family: var(--font-bold);
+  color: var(--indigo-700);
+}
+.team-hero-head span:last-child {
+  width: 75%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.team-hero-body {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=team.css.map */

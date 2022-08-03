@@ -16,7 +16,7 @@ const Card = ({ image, name, title, status, socials, color }) => {
 				<div className="card-title">{title}</div>
 				<div className="card-status">{status}</div>
 				<div className="card-socials">
-					{socials.map((social, id) => (
+					{socials?.map((social, id) => (
 						<a
 							href={getLink(social.service, social.username)}
 							title={`${social.service}/${social.username}`}

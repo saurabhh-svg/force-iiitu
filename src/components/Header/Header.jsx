@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import GlobalContext from "../../Context/GlobalContext";
 import favicon from "../../images/favicon.png";
 import navLinks from "../../utils/navigation";
 import "./header.css";
 
-const Header = ({ style }) => {
+const Header = () => {
+	const { headerStyle } = useContext(GlobalContext);
 	return (
-		<header className="header" style={style}>
+		<header className="header" style={headerStyle}>
 			<div className="header-left">
 				<div className="header-left-image">
 					<img src={favicon} alt="FORCE-IIITU" />

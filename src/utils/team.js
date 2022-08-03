@@ -292,3 +292,30 @@ const faculty = [
 ];
 
 export { cooridnators, executives, mentors, office, faculty };
+
+let team = [];
+team = [
+	...team,
+	{
+		title: "Faculty",
+		members: faculty,
+	},
+	{
+		title: "Office",
+		members: office,
+	},
+	{
+		title: "Mentors",
+		members: mentors,
+	},
+	{
+		title: "Coordinators",
+		members: cooridnators,
+	},
+	{
+		title: "Executive Members",
+		members: executives,
+	},
+];
+
+export default team;

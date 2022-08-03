@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Button from "../../components/Button/Button";
 import man from "../../images/man.svg";
 import teamwork from "../../images/teamwork.svg";
@@ -9,11 +9,14 @@ import { ArrowRight } from "react-feather";
 import Row, { Col } from "../../Layout/Responsive";
 import Card from "../../components/Card/Card";
 import { colors } from "../../utils";
+import GlobalContext from "../../Context/GlobalContext";
 
 const Home = () => {
+	const { setHeaderStyle } = useContext(GlobalContext);
 	useEffect(() => {
 		window.scrollTo(0, 0);
-	}, []);
+		setHeaderStyle({ color: "var(--white)" });
+	}, [setHeaderStyle]);
 
 	let team = [];
 

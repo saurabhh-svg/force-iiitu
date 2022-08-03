@@ -6,6 +6,7 @@ import "./style.css";
 import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Team from "./pages/Team/Team";
 
 const App = () => {
 	AOS.init();
@@ -14,6 +15,7 @@ const App = () => {
 			<Header />
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/team" element={<Team />} />
 			</Routes>
 			<Footer />
 		</>
