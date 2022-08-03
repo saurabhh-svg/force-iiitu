@@ -139,7 +139,14 @@
   left: 3rem;
 }
 .home-team {
+  flex-flow: column;
+  height: auto !important;
+  min-height: 100vh;
+  flex-wrap: wrap;
   background-color: #111010;
+}
+.home-team-body {
+  margin: 3rem;
 }
 
 /*# sourceMappingURL=home.css.map */

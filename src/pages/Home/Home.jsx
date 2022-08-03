@@ -6,11 +6,60 @@ import socials from "../../utils/socials";
 import "./home.css";
 import Dots from "../../images/Dots";
 import { ArrowRight } from "react-feather";
+import Row, { Col } from "../../Layout/Responsive";
+import Card from "../../components/Card/Card";
+import { colors } from "../../utils";
 
 const Home = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
+	let team = [];
+
+	const person = {
+		name: "Akshat Mittal",
+		image: "https://avatars.githubusercontent.com/u/84612609",
+		title: "MERN Stack Developer",
+		status: "Talk is cheap, show me the code",
+		color: "light-blue",
+		socials: [
+			{
+				service: "Github",
+				username: "akshatmittal61",
+			},
+			{
+				service: "Instagram",
+				username: "akshatmittal61",
+			},
+			{
+				service: "Twitter",
+				username: "akshatmittal61",
+			},
+			{
+				service: "Linkedin",
+				username: "akshatmittal61",
+			},
+			{
+				service: "Phone",
+				username: "9456849466",
+			},
+			{
+				service: "Mail",
+				username: "akshatmittal2506@gmail.com",
+			},
+		],
+	};
+
+	colors.forEach((color) => {
+		team = [
+			...team,
+			{
+				...person,
+				color: color,
+			},
+		];
+	});
 
 	return (
 		<main className="home">
@@ -126,7 +175,15 @@ const Home = () => {
 						color="light-blue"
 					/>
 				</div>
-				<div className="home-team-body"></div>
+				<div className="home-team-body">
+					<Row>
+						{team.map((person, id) => (
+							<Col lg={33} md={50} sm={100} key={id}>
+								<Card {...person} />
+							</Col>
+						))}
+					</Row>
+				</div>
 			</section>
 			<section className="home-about">
 				<Dots className="home-about-topimg" />
