@@ -28,6 +28,8 @@ export const getIcon = (a) => {
 };
 
 export const getLink = (service, username) => {
+	if (_.lowerCase(service) !== "phone" && username.slice(0, 4) === "http")
+		return username;
 	switch (_.lowerCase(service)) {
 		case "github":
 			return `https://github.com/${username}`;

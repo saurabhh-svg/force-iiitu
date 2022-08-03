@@ -28,18 +28,26 @@ const Team = () => {
 				</div>
 			</section>
 			<section className="team-people">
-				{team.map((group, id) => (
-					<div className="team-group" key={id}>
-						<h2>{group.title}</h2>
-						<Row>
-							{group.members.map((person, index) => (
-								<Col lg={33} md={50} sm={100} key={index}>
-									<Card {...person} />
-								</Col>
-							))}
-						</Row>
-					</div>
-				))}
+				{team.map(
+					(group, id) =>
+						group.members.length > 0 && (
+							<div className="team-group" key={id}>
+								<h2>{group.title}</h2>
+								<Row>
+									{group.members.map((person, index) => (
+										<Col
+											lg={33}
+											md={50}
+											sm={100}
+											key={index}
+										>
+											<Card {...person} />
+										</Col>
+									))}
+								</Row>
+							</div>
+						)
+				)}
 			</section>
 		</main>
 	);
