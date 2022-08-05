@@ -1,3 +1,4 @@
+import { colors } from ".";
 import allPeople from "./people";
 
 let team = [];
@@ -50,6 +51,7 @@ parsedTeam.forEach((e) => {
 				username: parsedObj.twitter,
 			},
 		],
+		color: colors[Math.floor(Math.random() * 15)],
 	};
 	team = [...team, obj];
 });
@@ -60,8 +62,10 @@ let mentors = [];
 let office = [];
 
 team.forEach((member) => {
+	if (member.email.slice(0, 2) === "19") mentors = [...mentors, member];
 	if (member.email.slice(0, 2) === "20")
 		cooridnators = [...cooridnators, member];
+	if (member.email.slice(0, 2) === "21") executives = [...executives, member];
 });
 let faculty = [
 	{

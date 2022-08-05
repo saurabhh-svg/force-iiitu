@@ -48,6 +48,7 @@ button {
 	@each $color in $colors {
 		&-#{$color} {
 			background-color: var(--#{$color});
+			outline: 2px solid var(--#{$color});
 		}
 
 		&-#{$color}.btn-outline {

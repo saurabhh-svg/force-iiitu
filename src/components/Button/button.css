@@ -39,6 +39,7 @@ button {
 }
 .btn-blue {
   background-color: var(--blue);
+  outline: 2px solid var(--blue);
 }
 .btn-blue.btn-outline {
   outline: 2px solid var(--blue);
@@ -46,6 +47,7 @@ button {
 }
 .btn-red {
   background-color: var(--red);
+  outline: 2px solid var(--red);
 }
 .btn-red.btn-outline {
   outline: 2px solid var(--red);
@@ -53,6 +55,7 @@ button {
 }
 .btn-yellow {
   background-color: var(--yellow);
+  outline: 2px solid var(--yellow);
 }
 .btn-yellow.btn-outline {
   outline: 2px solid var(--yellow);
@@ -60,6 +63,7 @@ button {
 }
 .btn-green {
   background-color: var(--green);
+  outline: 2px solid var(--green);
 }
 .btn-green.btn-outline {
   outline: 2px solid var(--green);
@@ -67,6 +71,7 @@ button {
 }
 .btn-white {
   background-color: var(--white);
+  outline: 2px solid var(--white);
 }
 .btn-white.btn-outline {
   outline: 2px solid var(--white);
@@ -74,6 +79,7 @@ button {
 }
 .btn-black {
   background-color: var(--black);
+  outline: 2px solid var(--black);
 }
 .btn-black.btn-outline {
   outline: 2px solid var(--black);
@@ -81,6 +87,7 @@ button {
 }
 .btn-purple {
   background-color: var(--purple);
+  outline: 2px solid var(--purple);
 }
 .btn-purple.btn-outline {
   outline: 2px solid var(--purple);
@@ -88,6 +95,7 @@ button {
 }
 .btn-indigo {
   background-color: var(--indigo);
+  outline: 2px solid var(--indigo);
 }
 .btn-indigo.btn-outline {
   outline: 2px solid var(--indigo);
@@ -95,6 +103,7 @@ button {
 }
 .btn-orange {
   background-color: var(--orange);
+  outline: 2px solid var(--orange);
 }
 .btn-orange.btn-outline {
   outline: 2px solid var(--orange);
@@ -102,6 +111,7 @@ button {
 }
 .btn-grey {
   background-color: var(--grey);
+  outline: 2px solid var(--grey);
 }
 .btn-grey.btn-outline {
   outline: 2px solid var(--grey);
@@ -109,6 +119,7 @@ button {
 }
 .btn-brown {
   background-color: var(--brown);
+  outline: 2px solid var(--brown);
 }
 .btn-brown.btn-outline {
   outline: 2px solid var(--brown);
