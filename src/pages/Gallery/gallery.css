@@ -15,14 +15,6 @@
   align-items: center;
   flex-flow: column;
 }
-.gallery-hero-head span {
-  /* &:last-child {
-  	width: 75%;
-  	font-size: 1.5rem;
-  	line-height: 2rem;
-  	text-align: center;
-  } */
-}
 .gallery-hero-head span:first-child {
   font-size: 4rem;
   line-height: 4.5rem;
