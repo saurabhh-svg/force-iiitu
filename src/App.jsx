@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 import Team from "./pages/Team/Team";
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
+import Gallery from "./pages/Gallery/Gallery";
 
 const App = () => {
 	AOS.init();
@@ -17,6 +18,7 @@ const App = () => {
 			<Header />
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/gallery" element={<Gallery />} />
 				<Route path="/team" element={<Team />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<NotFound />} />
