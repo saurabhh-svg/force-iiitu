@@ -5,6 +5,9 @@ import events from "../../utils/events";
 import Card from "./Card";
 import "./wall.css";
 import "../Home/home.css";
+import achievements from "../../utils/achievments";
+import Achievement from "./Achievement";
+import Row, { Col } from "../../Layout/Responsive";
 
 const Wall = () => {
 	const { setHeaderStyle } = useContext(GlobalContext);
@@ -30,6 +33,26 @@ const Wall = () => {
 					{events.map((event, id) => (
 						<Card {...event} key={id} />
 					))}
+				</div>
+			</section>
+			<section className="wall-events">
+				<div
+					className="wall-head wall-events-head"
+					data-aos="fade-left"
+				>
+					<h1>
+						Honours And Achievements
+						<Dots fill="#A1BDE0" className="home-about-head-dots" />
+					</h1>
+				</div>
+				<div className="wall-events-body">
+					<Row>
+						{achievements.map((achievement, id) => (
+							<Col lg={33} md={50} sm={100}>
+								<Achievement {...achievement} key={id} />
+							</Col>
+						))}
+					</Row>
 				</div>
 			</section>
 		</main>
