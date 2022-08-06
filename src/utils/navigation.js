@@ -8,8 +8,8 @@ const navLinks = [
 		text: "Team",
 	},
 	{
-		link: "/events",
-		text: "Events",
+		link: "/wall-of-fame",
+		text: "Wall Of Fame",
 	},
 	{
 		link: "/gallery",
