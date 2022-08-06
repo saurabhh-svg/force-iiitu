@@ -4,6 +4,10 @@ const navLinks = [
 		text: "Home",
 	},
 	{
+		link: "/about",
+		text: "About",
+	},
+	{
 		link: "/team",
 		text: "Team",
 	},
@@ -14,10 +18,6 @@ const navLinks = [
 	{
 		link: "/gallery",
 		text: "Gallery",
-	},
-	{
-		link: "/contact",
-		text: "Contact Us",
 	},
 ];
 

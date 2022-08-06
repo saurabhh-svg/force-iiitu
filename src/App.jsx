@@ -11,6 +11,7 @@ import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
 import Gallery from "./pages/Gallery/Gallery";
 import Wall from "./pages/Wall/Wall";
+import About from "./pages/About/About";
 
 const App = () => {
 	AOS.init();
@@ -19,6 +20,7 @@ const App = () => {
 			<Header />
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/about" element={<About />} />
 				<Route path="/wall-of-fame" element={<Wall />} />
 				<Route path="/gallery" element={<Gallery />} />
 				<Route path="/team" element={<Team />} />

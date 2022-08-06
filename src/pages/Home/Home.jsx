@@ -128,7 +128,7 @@ const Home = () => {
 				</div>
 				<div className="home-about-content">
 					<p>
-						FORCE -Forum of Computer Engineers is the association of
+						FORCE - Forum of Computer Engineers is the association of
 						computer science in IIIT Una.
 					</p>
 					<p>
