@@ -91,7 +91,7 @@ const Home = () => {
 						<Button
 							text="Know More"
 							color="light-blue"
-							link="/events"
+							link="/about"
 						/>
 						<Button
 							text="Contact Us"

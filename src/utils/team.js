@@ -61,6 +61,7 @@ let executives = [];
 let mentors = [];
 let office = [];
 
+
 team.forEach((member) => {
 	if (member.email.slice(0, 2) === "19") mentors = [...mentors, member];
 	if (member.email.slice(0, 2) === "20")

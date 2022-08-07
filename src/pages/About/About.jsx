@@ -7,6 +7,7 @@ import rules from "../../utils/rules";
 const About = () => {
 	const { setHeaderStyle } = useContext(GlobalContext);
 	useEffect(() => {
+		window.scrollTo(0, 0);
 		setHeaderStyle({
 			color: "var(--black)",
 		});
@@ -24,8 +25,8 @@ const About = () => {
 				</div>
 				<div className="home-about-content">
 					<p>
-						FORCE - Forum of Computer Engineers is the association of
-						computer science in IIIT Una.
+						FORCE - Forum of Computer Engineers is the association
+						of computer science in IIIT Una.
 					</p>
 					<p>
 						Our main objective is to encourage open source software,
@@ -174,7 +175,9 @@ const About = () => {
 						className="home-about-content-ul"
 					>
 						{rules.map((rule, id) => (
-							<li style={{margin: '1rem 0'}} key={id}>{rule}</li>
+							<li style={{ margin: "1rem 0" }} key={id}>
+								{rule}
+							</li>
 						))}
 					</ul>
 				</div>

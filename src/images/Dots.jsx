@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dots = ({ fill = "#233651", className }) => {
+const Dots = ({ fill = "#233651", className, ...rest }) => {
 	return (
 		<svg
 			width="90"
@@ -9,6 +9,7 @@ const Dots = ({ fill = "#233651", className }) => {
 			fill="none"
 			className={className}
 			xmlns="http://www.w3.org/2000/svg"
+			{...rest}
 		>
 			<rect width="10" height="10" fill={fill} />
 			<rect y="20" width="10" height="10" fill={fill} />

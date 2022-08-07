@@ -1,5 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import GlobalContext from "../../Context/GlobalContext";
+import Dots from "../../images/Dots";
+import Ellipse from "../../images/Ellipse";
 import galleryPoster from "../../images/gallery.svg";
 import Masonry, { MasonryBox } from "../../Layout/Masonry/Masonry";
 import images from "../../utils/gallery";
@@ -17,6 +19,9 @@ const Gallery = () => {
 	return (
 		<main className="gallery">
 			<section className="gallery-hero">
+				<Dots className="gallery-hero-dots" data-index="1" />
+				<Dots className="gallery-hero-dots" data-index="2" />
+				<Ellipse className='gallery-hero-ellipse' />
 				<div className="gallery-hero-head">
 					<span>Gallery</span>
 				</div>
