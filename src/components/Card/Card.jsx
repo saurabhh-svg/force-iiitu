@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { getIcon, getLink } from "../../utils";
+import userFallback from "../../images/user.svg";
 import "./card.css";
 
 const Card = ({
@@ -10,13 +11,18 @@ const Card = ({
 	socials,
 	color = "light-blue",
 }) => {
+	const [userImage, setUserImage] = useState(image);
 	return (
 		<div
 			className="card"
 			style={{ backgroundColor: `var(--${color}-100)` }}
 		>
 			<div className="card-image">
-				<img src={image} alt={name} />
+				<img
+					src={userImage}
+					onError={() => setUserImage(userFallback)}
+					alt={name}
+				/>
 			</div>
 			<div className="card-content">
 				<div className="card-name">{name}</div>

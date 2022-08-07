@@ -10,6 +10,7 @@ import Row, { Col } from "../../Layout/Responsive";
 import Card from "../../components/Card/Card";
 import { colors } from "../../utils";
 import GlobalContext from "../../Context/GlobalContext";
+import { office } from "../../utils/team";
 
 const Home = () => {
 	const { setHeaderStyle } = useContext(GlobalContext);
@@ -18,51 +19,7 @@ const Home = () => {
 		setHeaderStyle({ color: "var(--white)" });
 	}, [setHeaderStyle]);
 
-	let team = [];
-
-	const person = {
-		name: "Akshat Mittal",
-		image: "https://avatars.githubusercontent.com/u/84612609",
-		title: "MERN Stack Developer",
-		status: "Talk is cheap, show me the code",
-		color: "light-blue",
-		socials: [
-			{
-				service: "Github",
-				username: "akshatmittal61",
-			},
-			{
-				service: "Instagram",
-				username: "akshatmittal61",
-			},
-			{
-				service: "Twitter",
-				username: "akshatmittal61",
-			},
-			{
-				service: "Linkedin",
-				username: "akshatmittal61",
-			},
-			{
-				service: "Phone",
-				username: "9456849466",
-			},
-			{
-				service: "Mail",
-				username: "akshatmittal2506@gmail.com",
-			},
-		],
-	};
-
-	colors.forEach((color) => {
-		team = [
-			...team,
-			{
-				...person,
-				color: color,
-			},
-		];
-	});
+	let team = [...office];
 
 	return (
 		<main className="home">
@@ -128,8 +85,8 @@ const Home = () => {
 				</div>
 				<div className="home-about-content">
 					<p>
-						FORCE - Forum of Computer Engineers is the association of
-						computer science in IIIT Una.
+						FORCE - Forum of Computer Engineers is the association
+						of computer science in IIIT Una.
 					</p>
 					<p>
 						Our main objective is to encourage open source software,

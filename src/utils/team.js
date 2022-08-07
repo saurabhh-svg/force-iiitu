@@ -61,12 +61,18 @@ let executives = [];
 let mentors = [];
 let office = [];
 
-
 team.forEach((member) => {
 	if (member.email.slice(0, 2) === "19") mentors = [...mentors, member];
-	if (member.email.slice(0, 2) === "20")
+	else if (member.email.slice(0, 2) === "20")
 		cooridnators = [...cooridnators, member];
-	if (member.email.slice(0, 2) === "21") executives = [...executives, member];
+	else if (member.email.slice(0, 2) === "21")
+		executives = [...executives, member];
+	if (
+		member.email === "19331@iiitu.ac.in" ||
+		member.email === "19137@iiitu.ac.in" ||
+		member.email === "19307@iiitu.ac.in"
+	)
+		office = [...office, member];
 });
 let faculty = [
 	{

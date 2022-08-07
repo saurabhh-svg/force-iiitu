@@ -2,6 +2,10 @@ import React, { useContext, useEffect } from "react";
 import GlobalContext from "../../Context/GlobalContext";
 import Dots from "../../images/Dots";
 import teamwork from "../../images/teamwork.svg";
+import Accordian from "../../Layout/Accordian/Accordian";
+import AccordionDetails from "../../Layout/Accordian/AccordionDetails";
+import AccordionSummary from "../../Layout/Accordian/AccordionSummary";
+import faqs from "../../utils/FAQ";
 import rules from "../../utils/rules";
 
 const About = () => {
@@ -121,14 +125,6 @@ const About = () => {
 						provide equal opportunity while working in a team and it
 						is a great experience for everyone.
 					</p>
-					<ul className="home-about-content-ul">
-						<li>Web Development</li>
-						<li>Android Development</li>
-						<li>Flutter Development</li>
-						<li>React</li>
-						<li>Resume Building</li>
-						<li>Git and Github</li>
-					</ul>
 				</div>
 			</section>
 			<section className="home-about">
@@ -162,7 +158,7 @@ const About = () => {
 					style={{ justifyContent: "center" }}
 					data-aos="fade-right"
 				>
-					<h1>Code Of Conduct</h1>
+					<h1 style={{ margin: "5rem 0 0 0" }}>Code Of Conduct</h1>
 				</div>
 				<div className="home-about-content">
 					<ul
@@ -180,6 +176,25 @@ const About = () => {
 							</li>
 						))}
 					</ul>
+				</div>
+			</section>
+			<section className="home-about" style={{ height: "auto" }}>
+				<Dots className="home-about-topimg" />
+				<div
+					className="home-about-head"
+					style={{ justifyContent: "center" }}
+					data-aos="fade-right"
+				>
+					<h1 style={{ margin: "5rem 0 0 0" }}>FAQs</h1>
+				</div>
+				<div className="home-about-content">
+					{faqs.map((faq, id) => (
+						<Accordian
+							summary={faq.question}
+							details={faq.answer}
+							key={id}
+						/>
+					))}
 				</div>
 			</section>
 		</main>
