@@ -12,6 +12,7 @@
 		var(--bgcolor) 50%,
 		var(--primary-2) 50%
 	);
+	background-attachment: fixed;
 	&-container {
 		width: 60vw;
 		height: 70vh;

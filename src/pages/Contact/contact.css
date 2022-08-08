@@ -8,6 +8,7 @@
   position: relative;
   background-color: #e4e9fd;
   background-image: -webkit-linear-gradient(105deg, var(--bgcolor) 50%, var(--primary-2) 50%);
+  background-attachment: fixed;
 }
 .contact-container {
   width: 60vw;

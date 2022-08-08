@@ -8,7 +8,6 @@ import Dots from "../../images/Dots";
 import { ArrowRight } from "react-feather";
 import Row, { Col } from "../../Layout/Responsive";
 import Card from "../../components/Card/Card";
-import { colors } from "../../utils";
 import GlobalContext from "../../Context/GlobalContext";
 import { office } from "../../utils/team";
 
@@ -163,7 +162,6 @@ const Home = () => {
 					</ul>
 					<img
 						src={teamwork}
-						data-aos="zoom-in"
 						alt="Team Work"
 						className="home-about-content-joinimg"
 					/>

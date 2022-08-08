@@ -3,8 +3,6 @@ import GlobalContext from "../../Context/GlobalContext";
 import Dots from "../../images/Dots";
 import teamwork from "../../images/teamwork.svg";
 import Accordian from "../../Layout/Accordian/Accordian";
-import AccordionDetails from "../../Layout/Accordian/AccordionDetails";
-import AccordionSummary from "../../Layout/Accordian/AccordionSummary";
 import faqs from "../../utils/FAQ";
 import rules from "../../utils/rules";
 
