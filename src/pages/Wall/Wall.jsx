@@ -49,8 +49,8 @@ const Wall = () => {
 				<div className="wall-events-body">
 					<Row>
 						{achievements.map((achievement, id) => (
-							<Col lg={33} md={50} sm={100}>
-								<Achievement {...achievement} key={id} />
+							<Col lg={33} md={50} sm={100} key={id}>
+								<Achievement {...achievement} />
 							</Col>
 						))}
 					</Row>

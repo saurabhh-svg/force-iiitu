@@ -15,6 +15,7 @@ export const GlobalProvider = ({ children }) => {
 	mediaQueryMd.addListener(breakpoint);
 	mediaQueryLg.addListener(breakpoint);
 	const [isLoading, setIsLoading] = useState(false);
+	const [openNav, setOpenNav] = useState(false);
 	const [headerStyle, setHeaderStyle] = useState({ color: "var(--white)" });
 	return (
 		<GlobalContext.Provider
@@ -24,6 +25,8 @@ export const GlobalProvider = ({ children }) => {
 				breakpoint,
 				headerStyle,
 				setHeaderStyle,
+				openNav,
+				setOpenNav,
 			}}
 		>
 			{children}

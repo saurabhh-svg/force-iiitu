@@ -8,8 +8,8 @@ const Achievement = ({ title, image, participants }) => {
 			</div>
 			<div className="achievement-head">{title}</div>
 			<div className="achievement-participants">
-				{participants.map((person) => (
-					<span>{person}</span>
+				{participants.map((person, id) => (
+					<span key={id}>{person}</span>
 				))}
 			</div>
 		</div>

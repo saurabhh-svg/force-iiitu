@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useContext, useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./style.css";
@@ -12,12 +12,21 @@ import NotFound from "./pages/NotFound/NotFound";
 import Gallery from "./pages/Gallery/Gallery";
 import Wall from "./pages/Wall/Wall";
 import About from "./pages/About/About";
+import Navigation from "./components/Navigation/Navigation";
+import GlobalContext from "./Context/GlobalContext";
 
 const App = () => {
 	AOS.init();
+	const location = useLocation();
+	const { breakpoint, setOpenNav } = useContext(GlobalContext);
+	useEffect(() => {
+		setOpenNav(false);
+	}, [location.pathname, setOpenNav]);
+
 	return (
 		<>
 			<Header />
+			{(breakpoint("mobile") || breakpoint("tab")) && <Navigation />}
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />

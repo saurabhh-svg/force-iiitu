@@ -1,8 +1,8 @@
 import React from "react";
 
-const MaterialIcons = ({ children, ...rest }) => {
+const MaterialIcons = ({ children, className = "", ...rest }) => {
 	return (
-		<span className="material-symbols-outlined" {...rest}>
+		<span className={`material-symbols-outlined ${className}`} {...rest}>
 			{children}
 		</span>
 	);

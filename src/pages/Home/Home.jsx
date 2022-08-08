@@ -12,7 +12,7 @@ import GlobalContext from "../../Context/GlobalContext";
 import { office } from "../../utils/team";
 
 const Home = () => {
-	const { setHeaderStyle } = useContext(GlobalContext);
+	const { setHeaderStyle, breakpoint } = useContext(GlobalContext);
 	useEffect(() => {
 		window.scrollTo(0, 0);
 		setHeaderStyle({ color: "var(--white)" });
@@ -112,10 +112,10 @@ const Home = () => {
 						beginners in the world of programming.
 					</p>
 					<p>
-						We have BITERATION, a student chapter on codechef of IIIT
-						Una to provide students a platform to compete against
-						the best of minds.Our other events include short and
-						long challenges,a technical fest MERAKI and a yearly
+						We have BITERATION, a student chapter on codechef of
+						IIIT Una to provide students a platform to compete
+						against the best of minds.Our other events include short
+						and long challenges,a technical fest MERAKI and a yearly
 						hackathon.
 					</p>
 				</div>
@@ -160,11 +160,13 @@ const Home = () => {
 						<li>To enhance your SPEAKING SKILLS </li>
 						<li>To learn TEAMWORK</li>
 					</ul>
-					<img
-						src={teamwork}
-						alt="Team Work"
-						className="home-about-content-joinimg"
-					/>
+					{!(breakpoint("mobile") || breakpoint("tab")) && (
+						<img
+							src={teamwork}
+							alt="Team Work"
+							className="home-about-content-joinimg"
+						/>
+					)}
 				</div>
 			</section>
 		</main>

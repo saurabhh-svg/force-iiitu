@@ -45,7 +45,6 @@ const Footer = () => {
 							type="text"
 							placeholder="Type your full name"
 							required
-							autoFocus
 							name="name"
 							value={user.name}
 							onChange={handleChange}
@@ -75,19 +74,19 @@ const Footer = () => {
 					</form>
 				</div>
 				<div className="footer-body-right">
-					<div className="footer-body-right-socials"></div>
 					{socials.map((social, id) => (
 						<div className="footer-body-right-social" key={id}>
-							<div className="footer-body-right-social__icon">
-								{social.icon}
-							</div>
 							<a
 								href={social.link}
 								target="_blank"
-								className="footer-body-right-social__linktext"
 								rel="noreferrer"
 							>
-								{social.linkText}
+								<div className="footer-body-right-social__icon">
+									{social.icon}
+								</div>
+								<span className="footer-body-right-social__linktext">
+									{social.linkText}
+								</span>
 							</a>
 						</div>
 					))}
@@ -99,54 +98,16 @@ const Footer = () => {
 				</div>
 				<div className="footer-foot-nav">
 					<nav>
-						{navLinks.map((nav) => (
-							<Link to={nav.link}>{nav.text}</Link>
+						{navLinks.map((nav, id) => (
+							<Link to={nav.link} key={id}>
+								{nav.text}
+							</Link>
 						))}
 					</nav>
 				</div>
 			</div>
 		</footer>
 	);
-	/* return (
-		<footer className="footer" style={{ backgroundImage: `url(${wave})` }}>
-			<div className="footer-left">
-				<img src={forceFullLogo} alt="FORCE full logo" />
-			</div>
-			<div className="footer-right">
-				<div className="footer-right-top">
-                <div className="footer-right-top-left">
-                <ul>
-                    {
-                        navLinks.map((navLink,id)=>(
-                            <li key={id}>
-                                <Link to={navLink.link}>{navLink.text}</Link>
-                            </li>
-                        ))
-                    }
-                </ul>
-                </div>
-                <div className="footer-right-top-right">
-					<span className="footer-right-top-text">
-						<span>We Strive to success</span>
-					</span>
-                    </div>
-				</div>
-				<div className="footer-right-bottom">
-					{socials.map((social, id) => (
-						<a
-							href={social.link}
-							title={social.text + "/" + social.username}
-							key={id}
-							target="_blank"
-							rel="noreferrer"
-						>
-							{social.icon}
-						</a>
-					))}
-				</div>
-			</div>
-		</footer>
-	); */
 };
 
 export default Footer;

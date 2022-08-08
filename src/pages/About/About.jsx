@@ -8,7 +8,7 @@ import rules from "../../utils/rules";
 import "./about.css";
 
 const About = () => {
-	const { setHeaderStyle } = useContext(GlobalContext);
+	const { setHeaderStyle, breakpoint } = useContext(GlobalContext);
 	useEffect(() => {
 		window.scrollTo(0, 0);
 		setHeaderStyle({
@@ -56,10 +56,10 @@ const About = () => {
 						beginners in the world of programming.
 					</p>
 					<p>
-						We have BITERATION, a student chapter on codechef of IIIT
-						Una to provide students a platform to compete against
-						the best of minds.Our other events include short and
-						long challenges,a technical fest MERAKI and a yearly
+						We have BITERATION, a student chapter on codechef of
+						IIIT Una to provide students a platform to compete
+						against the best of minds.Our other events include short
+						and long challenges,a technical fest MERAKI and a yearly
 						hackathon.
 					</p>
 				</div>
@@ -142,12 +142,14 @@ const About = () => {
 						<li>To enhance your SPEAKING SKILLS </li>
 						<li>To learn TEAMWORK</li>
 					</ul>
-					<img
-						src={teamwork}
-						data-aos="zoom-in"
-						alt="Team Work"
-						className="home-about-content-joinimg"
-					/>
+					{!(breakpoint("mobile") || breakpoint("tab")) && (
+						<img
+							src={teamwork}
+							data-aos="zoom-in"
+							alt="Team Work"
+							className="home-about-content-joinimg"
+						/>
+					)}
 				</div>
 			</section>
 			<section
@@ -173,12 +175,10 @@ const About = () => {
 						className="home-about-content-ul"
 					>
 						{rules.map((rule, id) => (
-							<>
-								<li className="about-faq-li" key={id}>
-									{rule}
-									<hr className="about-faq-hr"></hr>
-								</li>
-							</>
+							<li className="about-faq-li" key={id}>
+								{rule}
+								<hr className="about-faq-hr"></hr>
+							</li>
 						))}
 					</ul>
 				</div>
