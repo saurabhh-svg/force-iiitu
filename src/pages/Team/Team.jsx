@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import Card from "../../components/Card/Card";
 import GlobalContext from "../../Context/GlobalContext";
+import Dots from "../../images/Dots";
+import Ellipse from "../../images/Ellipse";
 import group from "../../images/group.svg";
 import Row, { Col } from "../../Layout/Responsive";
 import team from "../../utils/team";
@@ -15,6 +17,10 @@ const Team = () => {
 	return (
 		<main className="team">
 			<section className="team-hero">
+				<Dots className="team-hero-dots" data-index="1" />
+				<Dots className="team-hero-dots" data-index="2" />
+				<Ellipse className='team-hero-ellipse' />
+				<span className="team-circles"></span>
 				<div className="team-hero-head">
 					<span>Meet Our Team</span>
 					<span>

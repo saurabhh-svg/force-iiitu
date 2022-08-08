@@ -5,6 +5,7 @@ import teamwork from "../../images/teamwork.svg";
 import Accordian from "../../Layout/Accordian/Accordian";
 import faqs from "../../utils/FAQ";
 import rules from "../../utils/rules";
+import "./about.css";
 
 const About = () => {
 	const { setHeaderStyle } = useContext(GlobalContext);
@@ -55,7 +56,7 @@ const About = () => {
 						beginners in the world of programming.
 					</p>
 					<p>
-						We have BITERATION,a student chapter on codechef of IIIT
+						We have BITERATION, a student chapter on codechef of IIIT
 						Una to provide students a platform to compete against
 						the best of minds.Our other events include short and
 						long challenges,a technical fest MERAKI and a yearly
@@ -129,7 +130,7 @@ const About = () => {
 				<Dots className="home-about-topimg" />
 				<div className="home-about-head" data-aos="fade-right">
 					<h1>
-						Why you should join us?
+						Why should you join us?
 						<Dots fill="#A1BDE0" className="home-about-head-dots" />
 					</h1>
 				</div>
@@ -149,7 +150,10 @@ const About = () => {
 					/>
 				</div>
 			</section>
-			<section className="home-about" style={{ height: "auto" }}>
+			<section
+				className="home-about"
+				style={{ height: "auto", background: "var(--bgcolor)" }}
+			>
 				<Dots className="home-about-topimg" />
 				<div
 					className="home-about-head"
@@ -169,9 +173,12 @@ const About = () => {
 						className="home-about-content-ul"
 					>
 						{rules.map((rule, id) => (
-							<li style={{ margin: "1rem 0" }} key={id}>
-								{rule}
-							</li>
+							<>
+								<li className="about-faq-li" key={id}>
+									{rule}
+									<hr className="about-faq-hr"></hr>
+								</li>
+							</>
 						))}
 					</ul>
 				</div>
@@ -185,7 +192,14 @@ const About = () => {
 				>
 					<h1 style={{ margin: "5rem 0 0 0" }}>FAQs</h1>
 				</div>
-				<div className="home-about-content">
+				<div
+					className="home-about-content"
+					style={{
+						fontSize: "1rem",
+						lineHeight: "1.5rem",
+						listStyle: "none",
+					}}
+				>
 					{faqs.map((faq, id) => (
 						<Accordian
 							summary={faq.question}

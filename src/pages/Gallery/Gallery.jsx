@@ -21,7 +21,7 @@ const Gallery = () => {
 			<section className="gallery-hero">
 				<Dots className="gallery-hero-dots" data-index="1" />
 				<Dots className="gallery-hero-dots" data-index="2" />
-				<Ellipse className='gallery-hero-ellipse' />
+				<Ellipse className="gallery-hero-ellipse" />
 				<div className="gallery-hero-head">
 					<span>Gallery</span>
 				</div>

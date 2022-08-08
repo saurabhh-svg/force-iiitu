@@ -112,7 +112,7 @@ const Home = () => {
 						beginners in the world of programming.
 					</p>
 					<p>
-						We have BITERATION,a student chapter on codechef of IIIT
+						We have BITERATION, a student chapter on codechef of IIIT
 						Una to provide students a platform to compete against
 						the best of minds.Our other events include short and
 						long challenges,a technical fest MERAKI and a yearly
@@ -148,7 +148,7 @@ const Home = () => {
 				<Dots className="home-about-topimg" />
 				<div className="home-about-head" data-aos="fade-right">
 					<h1>
-						Why you should join us?
+						Why should you join us?
 						<Dots fill="#A1BDE0" className="home-about-head-dots" />
 					</h1>
 				</div>

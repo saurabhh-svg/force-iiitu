@@ -6,7 +6,7 @@ FORCE is the association of computer science in IIIT Una. Our main objective is 
 <img src="./src/images/favicon.png" />
 </p>
 
-### Why you should join our community
+### Why should you join our community
 
 -   To improve your coding skills
 -   To become a full stack developer.

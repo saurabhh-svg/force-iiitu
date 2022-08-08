@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import wave from "../../images/wave.svg";
 import "./footer.css";
-import laptop from "../../images/laptop.jpeg";
 import banner from "../../images/banner2.jpg";
 import socials from "../../utils/socials";
 import navLinks from "../../utils/navigation";
