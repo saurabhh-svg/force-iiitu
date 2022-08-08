@@ -121,7 +121,7 @@ const Home = () => {
 				</div>
 			</section>
 			<section className="home-team">
-				<div className="home-about-head" data-aos="fade-right">
+				<div className="home-about-head home-team-head" data-aos="fade-right">
 					<h1 style={{ color: "var(--indigo-100)" }}>Our Team</h1>
 					<Button
 						variant="outline"

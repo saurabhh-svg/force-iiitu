@@ -94,12 +94,24 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 672px) {
+  .event-card {
+    height: 37.5rem;
+    flex-flow: column;
+  }
+}
 .event-card-image {
   width: 45%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 672px) {
+  .event-card-image {
+    width: 100%;
+    height: 50%;
+  }
 }
 .event-card-content {
   width: 55%;
@@ -110,6 +122,13 @@
   flex-flow: column;
   padding: 0 2rem;
   color: var(--white);
+}
+@media (max-width: 672px) {
+  .event-card-content {
+    width: 100%;
+    height: 50%;
+    padding: 0 0.75rem;
+  }
 }
 .event-card-content > * {
   margin: 1rem 0;

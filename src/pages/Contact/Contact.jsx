@@ -41,7 +41,6 @@ const Contact = () => {
 							type="text"
 							placeholder="Type your full name"
 							required
-							autoFocus
 							name="name"
 							value={user.name}
 							onChange={handleChange}

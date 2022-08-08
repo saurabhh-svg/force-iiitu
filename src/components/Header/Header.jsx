@@ -9,7 +9,7 @@ const Header = () => {
 	const { headerStyle, breakpoint } = useContext(GlobalContext);
 	return (
 		<header className="header" style={headerStyle}>
-			<div className="header-left">
+			<Link className="header-left" to="/">
 				<div className="header-left-image">
 					<img src={favicon} alt="FORCE-IIITU" />
 				</div>
@@ -19,7 +19,7 @@ const Header = () => {
 						Forum for computer engineers
 					</span>
 				</div>
-			</div>
+			</Link>
 			{!(breakpoint("mobile") || breakpoint("tab")) && (
 				<div className="header-right">
 					<nav className="header-right-nav header-nav">

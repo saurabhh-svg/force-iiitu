@@ -198,12 +198,22 @@ const About = () => {
 						fontSize: "1rem",
 						lineHeight: "1.5rem",
 						listStyle: "none",
+						width: breakpoint("mobile")
+							? "100%"
+							: breakpoint("tab")
+							? "90%"
+							: "80%",
 					}}
 				>
 					{faqs.map((faq, id) => (
 						<Accordian
 							summary={faq.question}
-							details={faq.answer}
+							details={
+								<>
+									<div>Question : {faq.question}</div>
+									<div>Answer : {faq.answer}</div>
+								</>
+							}
 							key={id}
 						/>
 					))}

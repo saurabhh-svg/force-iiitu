@@ -1,3 +1,4 @@
+@import "../../config";
 .team {
 	background-image: repeating-linear-gradient(
 		to right,
@@ -45,8 +46,6 @@
 		align-items: center;
 		padding-top: var(--head-height);
 		position: relative;
-		// background-repeat: no-repeat;
-		// background-size: 250px 250px;
 		&::before,
 		&::after {
 			position: absolute;
@@ -69,6 +68,9 @@
 		}
 		&-dots {
 			position: absolute;
+			@include respond(phone) {
+				display: none;
+			}
 			&[data-index="1"] {
 				top: 20rem;
 				left: 5rem;

@@ -199,15 +199,17 @@
   margin-left: 2rem;
 }
 @media (max-width: 672px) {
+  .footer-foot-nav a {
+    margin: 0 0.5rem;
+  }
+}
+@media (max-width: 672px) {
   .footer-foot-nav {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
-  }
-  .footer-foot-nav a {
-    margin: 0 1rem;
   }
 }
 

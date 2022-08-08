@@ -25,6 +25,7 @@
 @media (max-width: 672px) {
   .contact-container {
     width: 90vw;
+    height: auto;
     flex-flow: column;
   }
 }
