@@ -93,6 +93,7 @@
   line-height: 4.5rem;
   font-family: var(--font-bold);
   color: var(--indigo-700);
+  margin: 0.75rem 0;
 }
 .team-hero-head span:last-child {
   width: 75%;
