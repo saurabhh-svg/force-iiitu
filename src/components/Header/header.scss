@@ -4,7 +4,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 1rem;
+	padding: 0 2rem;
 	position: relative;
 	top: 0;
 	left: 0;
@@ -21,7 +21,7 @@
 		align-items: center;
 		&-image {
 			width: var(--head-height);
-			height: var(--head-height);
+			height: calc(var(--head-height) - 1rem);
 			display: flex;
 			justify-content: center;
 			align-items: center;

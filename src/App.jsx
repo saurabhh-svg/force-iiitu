@@ -36,7 +36,7 @@ const App = () => {
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
-			<Footer />
+			{location.pathname !== "/contact" && <Footer />}
 		</>
 	);
 };

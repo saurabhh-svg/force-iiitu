@@ -320,9 +320,9 @@ let allPeople = [
 			"https://drive.google.com/open?id=1SdrD-hlXHXosqav3ZiJ-OTj5xk4gxxr8",
 	},
 	{
-		Timestamp: "8/4/2022 10:14:57",
+		Timestamp: "8/8/2022 22:37:07",
 		"Email Address": "20244@iiitu.ac.in",
-		Name: "20244@iiitu.ac.in",
+		Name: "Pratham Singh",
 		"Roll No.": 20244,
 		"Personal Email": "prathambsingh891@gmail.com",
 		"Designation(E.g:- Web Developer, Graphic Designer, CP, etc)":
@@ -692,6 +692,90 @@ let allPeople = [
 		"Phone No.": "+917266070069",
 		"Profile Photo (preferably focused on face)":
 			"https://drive.google.com/open?id=1azPJZm6uvXXR162UWU9h5fkPUGUrW6Q0",
+	},
+	{
+		Timestamp: "8/8/2022 19:40:35",
+		"Email Address": "19308@iiitu.ac.in",
+		Name: "Devang Sharma",
+		"Roll No.": 19308,
+		"Personal Email": "this.devang@gmail.com",
+		"Designation(E.g:- Web Developer, Graphic Designer, CP, etc)": "CP",
+		"A one liner to describe yourself.(E.g:- I am an avid learner, always on the hunt for new experiences)":
+			"Curious for innovation",
+		"Instagram username": "_devang_sharma_",
+		"LinkedIn Username": "-devang-sharma-",
+		"Twitter Username": "",
+		"Phone No.": 7877857818,
+		"Profile Photo (preferably focused on face)":
+			"https://drive.google.com/open?id=1Wh5Nw99xuHvcJJJ_BhLWfz8MXE_UYgPX",
+	},
+	{
+		Timestamp: "8/8/2022 19:58:21",
+		"Email Address": "19121@iiitu.ac.in",
+		Name: "Kavisha Gupta",
+		"Roll No.": 19121,
+		"Personal Email": "kavishagupta20340@gmail.com",
+		"Designation(E.g:- Web Developer, Graphic Designer, CP, etc)":
+			"Executive Member",
+		"A one liner to describe yourself.(E.g:- I am an avid learner, always on the hunt for new experiences)":
+			"I'm an avid learner, always on the hunt for new experiences",
+		"Instagram username": "_mozza_fiato_",
+		"LinkedIn Username": "Kavisha Gupta",
+		"Twitter Username": "",
+		"Phone No.": 9628820340,
+		"Profile Photo (preferably focused on face)":
+			"https://drive.google.com/open?id=1u5WgXhVDmdAppif7_8fB1ckn4dSMJhlx",
+	},
+	{
+		Timestamp: "8/8/2022 20:04:36",
+		"Email Address": "19137@iiitu.ac.in",
+		Name: "Praveen Kumar",
+		"Roll No.": 19137,
+		"Personal Email": "praveenkr.564@gmail.com",
+		"Designation(E.g:- Web Developer, Graphic Designer, CP, etc)":
+			"Vice President",
+		"A one liner to describe yourself.(E.g:- I am an avid learner, always on the hunt for new experiences)":
+			"Wake up to reality! Nothing ever goes as planned in this world. The longer you live, the more you realize that in this reality, only pain, suffering, and futility exist",
+		"Instagram username": "pkspyder007",
+		"LinkedIn Username": "pkspyder007",
+		"Twitter Username": "pkspyder007",
+		"Phone No.": "+917071243897",
+		"Profile Photo (preferably focused on face)":
+			"https://drive.google.com/open?id=1MrKKfZsxfbhr_UJKUbkyo-y1feqjUXwo",
+	},
+	{
+		Timestamp: "8/8/2022 22:50:06",
+		"Email Address": "19155@iiitu.ac.in",
+		Name: "Vanshika Pandey",
+		"Roll No.": 19155,
+		"Personal Email": "pvanshika217@gmail.com",
+		"Designation(E.g:- Web Developer, Graphic Designer, CP, etc)":
+			"Coordinator (Web Developer)",
+		"A one liner to describe yourself.(E.g:- I am an avid learner, always on the hunt for new experiences)":
+			"I am a tech enthusiast who loves to learn an implement new technologies, solve problems and build solutions that contribute to a better future.",
+		"Instagram username": "vanshika_pandeyyy",
+		"LinkedIn Username": "Vanshika Pandey",
+		"Twitter Username": "",
+		"Phone No.": "+918787050677",
+		"Profile Photo (preferably focused on face)":
+			"https://drive.google.com/open?id=1kVFlh7jlnb6Jt4xNDdT9QrDIVznHuGxh",
+	},
+	{
+		Timestamp: "8/8/2022 20:34:39",
+		"Email Address": "20105@iiitu.ac.in",
+		Name: "Akminderjeet Singh",
+		"Roll No.": 20105,
+		"Personal Email": "jeetakminder@gmail.com",
+		"Designation(E.g:- Web Developer, Graphic Designer, CP, etc)":
+			"Web Developer",
+		"A one liner to describe yourself.(E.g:- I am an avid learner, always on the hunt for new experiences)":
+			"Work smart , not definitely Hard.",
+		"Instagram username": "ranadhaliwal___",
+		"LinkedIn Username": "Akmindejeet Singh",
+		"Twitter Username": "",
+		"Phone No.": 7087197427,
+		"Profile Photo (preferably focused on face)":
+			"https://drive.google.com/open?id=19zMNGgswMFlB2Bo-CFiYn2Is5E5Vs3Lp",
 	},
 ];
 
