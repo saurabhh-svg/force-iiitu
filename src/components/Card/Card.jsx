@@ -22,6 +22,7 @@ const Card = ({
 					src={userImage}
 					onError={() => setUserImage(userFallback)}
 					alt={name}
+					loading="lazy"
 				/>
 			</div>
 			<div className="card-content">
