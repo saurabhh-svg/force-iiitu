@@ -12,7 +12,6 @@ import Row, { Col } from "../../Layout/Responsive";
 const Wall = () => {
 	const { setHeaderStyle } = useContext(GlobalContext);
 	useEffect(() => {
-		window.scrollTo(0, 0);
 		setHeaderStyle({
 			color: "var(--black)",
 		});

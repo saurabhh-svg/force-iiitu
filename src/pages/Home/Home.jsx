@@ -17,7 +17,6 @@ import MaterialIcons from "../../components/MaterialIcons";
 const Home = () => {
 	const { setHeaderStyle, breakpoint } = useContext(GlobalContext);
 	useEffect(() => {
-		window.scrollTo(0, 0);
 		setHeaderStyle({ color: "var(--white)" });
 	}, [setHeaderStyle]);
 
@@ -76,6 +75,14 @@ const Home = () => {
 						))}
 					</div>
 				</div>
+				<button
+					className="home-hero-scroll-btn"
+					onClick={() => {
+						window.scrollTo(0, 2 * window.innerHeight);
+					}}
+				>
+					<MaterialIcons>expand_more</MaterialIcons>
+				</button>
 			</section>
 			<section className="home-about">
 				<Dots className="home-about-topimg" />
@@ -136,6 +143,7 @@ const Home = () => {
 								text="Visit the Website"
 								icon="chevron_right"
 								variant="outline"
+								link="/cybersource"
 								color="light-blue"
 							/>
 						</div>

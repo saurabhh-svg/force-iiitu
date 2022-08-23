@@ -87,6 +87,16 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.home-hero-scroll-btn {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 2rem;
+  color: var(--white);
+  animation: bounce 2s ease-in-out infinite;
+}
 .home-about {
   background-image: repeating-linear-gradient(to right, var(--bgcolor-700), var(--bgcolor-700) 1px, transparent 1px, transparent);
   background-size: 250px 250px;
@@ -243,6 +253,24 @@
 .home-cyber-body-right > span {
   font-size: 1.75rem;
   line-height: 2rem;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-0.25rem);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(0.25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

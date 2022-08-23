@@ -10,7 +10,6 @@ import "./about.css";
 const About = () => {
 	const { setHeaderStyle, breakpoint } = useContext(GlobalContext);
 	useEffect(() => {
-		window.scrollTo(0, 0);
 		setHeaderStyle({
 			color: "var(--black)",
 		});

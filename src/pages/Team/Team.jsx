@@ -11,7 +11,6 @@ import "./team.css";
 const Team = () => {
 	const { setHeaderStyle } = useContext(GlobalContext);
 	useEffect(() => {
-		window.scrollTo(0, 0);
 		setHeaderStyle({ color: "var(--black)" });
 	}, [setHeaderStyle]);
 	return (
