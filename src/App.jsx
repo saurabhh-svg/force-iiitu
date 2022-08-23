@@ -14,6 +14,7 @@ import Wall from "./pages/Wall/Wall";
 import About from "./pages/About/About";
 import Navigation from "./components/Navigation/Navigation";
 import GlobalContext from "./Context/GlobalContext";
+import Progothon from "./pages/Progothon/Progothon";
 
 const App = () => {
 	AOS.init();
@@ -34,6 +35,7 @@ const App = () => {
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/wall-of-fame" element={<Wall />} />
+				<Route path="/event/progothon" element={<Progothon />} />
 				<Route path="/gallery" element={<Gallery />} />
 				<Route path="/team" element={<Team />} />
 				<Route path="/contact" element={<Contact />} />

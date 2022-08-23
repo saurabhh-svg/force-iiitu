@@ -1,0 +1,48 @@
+.progothon {
+  width: 100%;
+  height: auto;
+}
+.progothon > section {
+  min-height: 100vh;
+}
+.progothon-hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.progothon-hero-container {
+  transform: translateY(2rem);
+  color: var(--white);
+}
+.progothon-hero-container > * {
+  margin: 1rem 0;
+}
+.progothon-hero h1 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+.progothon-hero h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.progothon-hero button {
+  background-color: var(--pink);
+  border-radius: 500px;
+  padding: 0.875rem 1.35rem;
+  display: inline-flex;
+  align-items: center;
+}
+.progothon-hero button span {
+  margin: 0 0.3rem;
+}
+
+/*# sourceMappingURL=progothon.css.map */

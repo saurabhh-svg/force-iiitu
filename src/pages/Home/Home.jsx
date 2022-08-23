@@ -10,8 +10,8 @@ import Row, { Col } from "../../Layout/Responsive";
 import Card from "../../components/Card/Card";
 import GlobalContext from "../../Context/GlobalContext";
 import { office } from "../../utils/team";
-import cyberSource from "../../images/cybersource-intro-bg.jpg";
-import cyberIcon from "../../images/cyber-icon.png";
+import progothon from "../../images/progothon-intro-bg.jpg";
+import progothonIcon from "../../images/progothon-icon.png";
 import MaterialIcons from "../../components/MaterialIcons";
 
 const Home = () => {
@@ -110,7 +110,7 @@ const Home = () => {
 			<section
 				className="home-progothon"
 				style={{
-					backgroundImage: `url(${cyberSource})`,
+					backgroundImage: `url(${progothon})`,
 				}}
 			>
 				<div
@@ -133,7 +133,7 @@ const Home = () => {
 					<div className="home-progothon-body-container">
 						<div
 							className="home-progothon-body-left"
-							style={{ backgroundImage: `url(${cyberIcon})` }}
+							style={{ backgroundImage: `url(${progothonIcon})` }}
 						></div>
 						<div className="home-progothon-body-right">
 							<h2>Experience</h2>
