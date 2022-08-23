@@ -10,6 +10,9 @@ import Row, { Col } from "../../Layout/Responsive";
 import Card from "../../components/Card/Card";
 import GlobalContext from "../../Context/GlobalContext";
 import { office } from "../../utils/team";
+import cyberSource from "../../images/cybersource-intro-bg.jpg";
+import cyberIcon from "../../images/cyber-icon.png";
+import MaterialIcons from "../../components/MaterialIcons";
 
 const Home = () => {
 	const { setHeaderStyle, breakpoint } = useContext(GlobalContext);
@@ -97,6 +100,48 @@ const Home = () => {
 					</p>
 				</div>
 			</section>
+			<section
+				className="home-cyber"
+				style={{
+					backgroundImage: `url(${cyberSource})`,
+				}}
+			>
+				<div
+					className="home-about-head home-cyber-head"
+					data-aos="fade-right"
+				>
+					<h1 style={{ color: "var(--indigo-100)" }}>CyberSource</h1>
+					<Button
+						variant="outline"
+						text={
+							<>
+								Visit Page <ArrowRight />
+							</>
+						}
+						link="/cybersource"
+						color="light-blue"
+					/>
+				</div>
+				<div className="home-cyber-body">
+					<div className="home-cyber-body-container">
+						<div
+							className="home-cyber-body-left"
+							style={{ backgroundImage: `url(${cyberIcon})` }}
+						></div>
+						<div className="home-cyber-body-right">
+							<h2>Experience</h2>
+							<h2>Open Source</h2>
+							<span>For the Students, By the students</span>
+							<Button
+								text="Visit the Website"
+								icon="chevron_right"
+								variant="outline"
+								color="light-blue"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section className="home-about">
 				<Dots className="home-about-topimg" />
 				<div className="home-about-head" data-aos="fade-left">
@@ -121,7 +166,10 @@ const Home = () => {
 				</div>
 			</section>
 			<section className="home-team">
-				<div className="home-about-head home-team-head" data-aos="fade-right">
+				<div
+					className="home-about-head home-team-head"
+					data-aos="fade-right"
+				>
 					<h1 style={{ color: "var(--indigo-100)" }}>Our Team</h1>
 					<Button
 						variant="outline"

@@ -1,4 +1,4 @@
-.home section {
+.home > * {
   width: 100%;
   min-height: 100vh;
   height: auto;
@@ -7,7 +7,7 @@
   align-items: center;
   position: relative;
 }
-.home section::before {
+.home > *::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -181,6 +181,68 @@
 .home-team-body {
   margin: 3rem;
   width: 100%;
+}
+.home-cyber {
+  height: 100vh;
+  background-color: #111010;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-color: rgba(6, 12, 34, 0.9);
+  justify-content: flex-start;
+  flex-flow: column;
+  position: relative;
+}
+.home-cyber-head {
+  padding: 0 3rem;
+}
+.home-cyber-head h1 {
+  font-size: 3rem;
+}
+@media (max-width: 672px) {
+  .home-cyber-head h1 {
+    font-size: 2.5rem;
+  }
+}
+.home-cyber-body {
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-2rem);
+}
+.home-cyber-body-container {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  top: 0;
+  left: 0;
+}
+.home-cyber-body-left {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.home-cyber-body-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.home-cyber-body-right h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+.home-cyber-body-right > span {
+  font-size: 1.75rem;
+  line-height: 2rem;
 }
 
 /*# sourceMappingURL=home.css.map */
