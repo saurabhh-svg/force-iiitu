@@ -108,16 +108,16 @@ const Home = () => {
 				</div>
 			</section>
 			<section
-				className="home-cyber"
+				className="home-progothon"
 				style={{
 					backgroundImage: `url(${cyberSource})`,
 				}}
 			>
 				<div
-					className="home-about-head home-cyber-head"
+					className="home-about-head home-progothon-head"
 					data-aos="fade-right"
 				>
-					<h1 style={{ color: "var(--indigo-100)" }}>CyberSource</h1>
+					<h1 style={{ color: "var(--indigo-100)" }}>Prog-o-Thon</h1>
 					<Button
 						variant="outline"
 						text={
@@ -125,17 +125,17 @@ const Home = () => {
 								Visit Page <ArrowRight />
 							</>
 						}
-						link="/cybersource"
+						link="/event/progothon"
 						color="light-blue"
 					/>
 				</div>
-				<div className="home-cyber-body">
-					<div className="home-cyber-body-container">
+				<div className="home-progothon-body">
+					<div className="home-progothon-body-container">
 						<div
-							className="home-cyber-body-left"
+							className="home-progothon-body-left"
 							style={{ backgroundImage: `url(${cyberIcon})` }}
 						></div>
-						<div className="home-cyber-body-right">
+						<div className="home-progothon-body-right">
 							<h2>Experience</h2>
 							<h2>Open Source</h2>
 							<span>For the Students, By the students</span>
@@ -143,7 +143,7 @@ const Home = () => {
 								text="Visit the Website"
 								icon="chevron_right"
 								variant="outline"
-								link="/cybersource"
+								link="/event/progothon"
 								color="light-blue"
 							/>
 						</div>

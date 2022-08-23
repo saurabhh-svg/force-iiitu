@@ -192,7 +192,7 @@
   margin: 3rem;
   width: 100%;
 }
-.home-cyber {
+.home-progothon {
   height: 100vh;
   background-color: #111010;
   background-blend-mode: darken;
@@ -202,18 +202,18 @@
   flex-flow: column;
   position: relative;
 }
-.home-cyber-head {
+.home-progothon-head {
   padding: 0 3rem;
 }
-.home-cyber-head h1 {
+.home-progothon-head h1 {
   font-size: 3rem;
 }
 @media (max-width: 672px) {
-  .home-cyber-head h1 {
+  .home-progothon-head h1 {
     font-size: 2.5rem;
   }
 }
-.home-cyber-body {
+.home-progothon-body {
   left: 0;
   width: 100%;
   height: 100vh;
@@ -222,7 +222,7 @@
   align-items: center;
   transform: translateY(-2rem);
 }
-.home-cyber-body-container {
+.home-progothon-body-container {
   width: 100%;
   height: 25rem;
   display: flex;
@@ -232,13 +232,13 @@
   top: 0;
   left: 0;
 }
-.home-cyber-body-left {
+.home-progothon-body-left {
   width: 50%;
   height: 100%;
   background-size: cover;
   background-position: center;
 }
-.home-cyber-body-right {
+.home-progothon-body-right {
   width: 50%;
   height: 100%;
   display: flex;
@@ -246,11 +246,11 @@
   justify-content: space-evenly;
   align-items: flex-start;
 }
-.home-cyber-body-right h2 {
+.home-progothon-body-right h2 {
   font-size: 2.5rem;
   line-height: 3rem;
 }
-.home-cyber-body-right > span {
+.home-progothon-body-right > span {
   font-size: 1.75rem;
   line-height: 2rem;
 }
