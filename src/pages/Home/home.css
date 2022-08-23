@@ -197,6 +197,7 @@
   background-color: #111010;
   background-blend-mode: darken;
   background-size: cover;
+  background-attachment: fixed;
   background-color: rgba(6, 12, 34, 0.9);
   justify-content: flex-start;
   flex-flow: column;
