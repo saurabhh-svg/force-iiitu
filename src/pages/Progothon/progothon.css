@@ -1,6 +1,7 @@
 .progothon {
   width: 100%;
   height: auto;
+  position: relative;
 }
 .progothon > section {
   min-height: 100vh;
@@ -43,6 +44,45 @@
 }
 .progothon-hero button span {
   margin: 0 0.3rem;
+}
+.progothon-body {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.progothon-body-section {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+.progothon-body-content {
+  width: 60%;
+  padding: 3rem;
+}
+.progothon-body-content h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.progothon-body-content p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 1rem 0;
+}
+.progothon-aside {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  padding: 3rem;
+  font-family: var(--font-bold);
+  color: var(--white);
+  position: static;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=progothon.css.map */
