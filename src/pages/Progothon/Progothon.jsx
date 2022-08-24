@@ -208,6 +208,7 @@ const Progothon = () => {
 									<button
 										style={{
 											border: `2px solid var(--${schedule[scheduleId].color})`,
+											color: `var(--${schedule[scheduleId].color})`,
 										}}
 										onClick={() =>
 											setScheduleId((p) =>
@@ -224,6 +225,7 @@ const Progothon = () => {
 									<button
 										style={{
 											border: `2px solid var(--${schedule[scheduleId].color})`,
+											color: `var(--${schedule[scheduleId].color})`,
 										}}
 										onClick={() =>
 											setScheduleId(

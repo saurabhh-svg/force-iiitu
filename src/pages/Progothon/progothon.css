@@ -104,16 +104,17 @@
   font-size: 1.25rem;
   line-height: 1.5rem;
   margin: 1rem 0;
-  height: 5rem;
+  height: 4rem;
 }
 .progothon-body-schedule-btns {
   width: 60%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .progothon-body-schedule-btns button {
   border-radius: 500px;
+  margin: 0 1.5rem 0 0;
   padding: 1rem;
   width: 2rem;
   height: 2rem;
