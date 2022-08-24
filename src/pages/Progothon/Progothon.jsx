@@ -3,10 +3,33 @@ import MaterialIcons from "../../components/MaterialIcons";
 import GlobalContext from "../../Context/GlobalContext";
 import "./progothon.css";
 import progothonBG from "../../images/progothon.jpg";
+import Accordian from "../../Layout/Accordian/Accordian";
 
 const Progothon = () => {
 	const { setHeaderStyle } = useContext(GlobalContext);
 	const vh = window.innerHeight / 100;
+	const faqs = [
+		{
+			question: "How to register for the event?",
+			answer: "For registering in the event you need to go to the website of Cybernauts and click on register.You will be redirected to the application form.",
+		},
+		{
+			question: "How can I apply for project lead?",
+			answer: "For applying as a project lead you need to register for the event and submit your project idea.The selection will be based on certain criteria.",
+		},
+		{
+			question: "What will be the selection criteria for the event?",
+			answer: "There is no selection criteria for the participants but the project leads will be selected on the basis of their project ideas ,skillset , knowledge of domain , and experience.",
+		},
+		{
+			question: "When will the contribution period begin?",
+			answer: "The contribution period will begin from 2nd half of October.",
+		},
+		{
+			question: "How long will be the contribution period?",
+			answer: "The contribution period will be 2 months long i.e. from October To December",
+		},
+	];
 	const [asideBar, setAsideBar] = useState({
 		style: {
 			position: "unset",
@@ -128,14 +151,20 @@ const Progothon = () => {
 						</p>
 					</div>
 					<div className="progothon-body-section">
-						<h1>About Prog-o-thon</h1>
+						<h1>Frequnetly Asked Questions</h1>
 						<p>
-							Prog-o-thon is an initiative by the Technical Clubs
-							of IIIT Una to allow students to experience the
-							power of open source. It is a 2 month program where
-							the ideas submitted by you will be selected and the
-							participants will be given chance to work on them
-							with awesome mentors
+							{faqs.map((faq, id) => (
+								<Accordian
+									summary={faq.question}
+									details={
+										<>
+											<div>Question: {faq.question}</div>
+											<div>Answer: {faq.answer}</div>
+										</>
+									}
+									key={id}
+								/>
+							))}
 						</p>
 					</div>
 				</section>
