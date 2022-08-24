@@ -7,6 +7,18 @@ import Accordian from "../../Layout/Accordian/Accordian";
 
 const Progothon = () => {
 	const { setHeaderStyle } = useContext(GlobalContext);
+	const [asideBar, setAsideBar] = useState({
+		style: {
+			position: "unset",
+			top: 0,
+			left: 0,
+			backgroundColor: "var(--pink)",
+			color: "var(--white)",
+		},
+		index: "01",
+		title: "About",
+	});
+	const [scheduleId, setScheduleId] = useState(0);
 	const vh = window.innerHeight / 100;
 	const faqs = [
 		{
@@ -30,17 +42,41 @@ const Progothon = () => {
 			answer: "The contribution period will be 2 months long i.e. from October To December",
 		},
 	];
-	const [asideBar, setAsideBar] = useState({
-		style: {
-			position: "unset",
-			top: 0,
-			left: 0,
-			backgroundColor: "var(--pink)",
-			color: "var(--white)",
+	const schedule = [
+		{
+			date: "27",
+			month: "Sept",
+			day: "Tuesday",
+			time: "15.00 - 17.00",
+			description:
+				"ID distribution for participants and coordinators / Venue allocation / Slot distribution",
+			color: "brown",
 		},
-		index: "01",
-		title: "About",
-	});
+		{
+			date: "27-28",
+			month: "Sept",
+			day: "Tuesday-Wednesday",
+			time: "17.00 - 20.00",
+			description: "First Day for event",
+			color: "blue",
+		},
+		{
+			date: "28-29",
+			month: "Sept",
+			day: "Wednesday-Thursday",
+			time: "17.00 - 20.00",
+			description: "Second Day for event",
+			color: "blue",
+		},
+		{
+			date: "29",
+			month: "Sept",
+			day: "Thursday",
+			time: "9.00 - 11.00",
+			description: "Demo + Result",
+			color: "green",
+		},
+	];
 	useEffect(() => {
 		setHeaderStyle({
 			color: "var(--white)",
@@ -140,14 +176,67 @@ const Progothon = () => {
 						</p>
 					</div>
 					<div className="progothon-body-section">
-						<h1>About Prog-o-thon</h1>
+						<h1>Schedule</h1>
 						<p>
-							Prog-o-thon is an initiative by the Technical Clubs
-							of IIIT Una to allow students to experience the
-							power of open source. It is a 2 month program where
-							the ideas submitted by you will be selected and the
-							participants will be given chance to work on them
-							with awesome mentors
+							<div className="progothon-body-schedule">
+								<div className="progothon-body-schedule__day">
+									{schedule[scheduleId].day}
+								</div>
+								<div className="progothon-body-schedule__date">
+									<span
+										style={{
+											color: `var(--${schedule[scheduleId].color})`,
+										}}
+									>
+										{schedule[scheduleId].date}
+									</span>
+									<span>{schedule[scheduleId].month}</span>
+								</div>
+								<div className="progothon-body-schedule__time">
+									<span>{schedule[scheduleId].time}</span>
+								</div>
+								<div className="progothon-body-schedule__p">
+									<span
+										style={{
+											color: `var(--${schedule[scheduleId].color})`,
+										}}
+									>
+										{schedule[scheduleId].description}
+									</span>
+								</div>
+								<div className="progothon-body-schedule-btns">
+									<button
+										style={{
+											border: `2px solid var(--${schedule[scheduleId].color})`,
+										}}
+										onClick={() =>
+											setScheduleId((p) =>
+												p === 0
+													? schedule.length - 1
+													: p - 1
+											)
+										}
+									>
+										<MaterialIcons>
+											chevron_left
+										</MaterialIcons>
+									</button>
+									<button
+										style={{
+											border: `2px solid var(--${schedule[scheduleId].color})`,
+										}}
+										onClick={() =>
+											setScheduleId(
+												(p) => (p + 1) % schedule.length
+											)
+										}
+									>
+										<MaterialIcons>
+											chevron_right
+										</MaterialIcons>
+									</button>
+								</div>
+							</div>
 						</p>
 					</div>
 					<div className="progothon-body-section">
