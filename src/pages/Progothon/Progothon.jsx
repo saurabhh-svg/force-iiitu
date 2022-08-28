@@ -195,7 +195,7 @@ const Progothon = () => {
 					<h3>For the students, by the students</h3>
 					<div className="progothon-hero-btn">
 						<div
-							class="apply-button"
+							className="apply-button"
 							data-hackathon-slug="YOUR-HACKATHON-SLUG"
 							data-button-theme="light"
 							style={{ height: " 44px", width: "312px" }}
@@ -214,8 +214,10 @@ const Progothon = () => {
 			</section>
 			<main className="progothon-body">
 				<aside className="progothon-aside" style={asideBar.style}>
-					<span>{asideBar.index}</span>
-					<span>{asideBar.title}</span>
+					<div className="progothon-aside-container">
+						<span>{asideBar.index}. </span>
+						<span>{asideBar.title}</span>
+					</div>
 				</aside>
 				<section className="progothon-body-content">
 					<div className="progothon-body-section">

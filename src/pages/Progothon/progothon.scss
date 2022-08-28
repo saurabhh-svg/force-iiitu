@@ -1,3 +1,4 @@
+@import "../../config";
 .progothon {
 	width: 100%;
 	height: auto;
@@ -28,9 +29,11 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			margin: 2rem;
+			@include respond(phone) {
+				flex-flow: column;
+			}
 			button {
-				margin: 0 1rem;
+				margin: 2rem 1rem;
 			}
 		}
 		h1 {
@@ -50,6 +53,11 @@
 			padding: 0 1.35rem;
 			display: inline-flex;
 			align-items: center;
+			flex-flow: row;
+			@include respond(phone) {
+				font-size: 1.5rem;
+				height: 3.5rem;
+			}
 			span {
 				margin: 0 0.3rem;
 			}
@@ -76,6 +84,14 @@
 				font-size: 1.25rem;
 				line-height: 1.75rem;
 				margin: 1rem 0;
+			}
+			@include respond(tab) {
+				width: 75%;
+			}
+			@include respond(phone) {
+				width: 100%;
+				// height: 80vh;
+				margin-top: 20vh;
 			}
 		}
 		&-schedule {
@@ -143,7 +159,6 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: flex-start;
-		flex-flow: column;
 		font-size: 4.5rem;
 		line-height: 5rem;
 		padding: 3rem;
@@ -152,6 +167,32 @@
 		position: static;
 		top: 0;
 		left: 0;
+		&-container {
+			width: fit-content;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: flex-start;
+			flex-flow: column;
+			@include respond(tab) {
+				transform-origin: 0 0;
+				transform: rotateZ(-90deg);
+				flex-flow: row;
+			}
+			@include respond(phone){
+				transform: none;
+			}
+		}
+		span:first-child {
+			margin-right: 2rem;
+		}
+		@include respond(tab) {
+			width: 25%;
+			align-items: flex-end;
+		}
+		@include respond(phone) {
+			width: 100%;
+			height: 20vh;
+		}
 	}
 	&-sponsors {
 		width: 100%;
