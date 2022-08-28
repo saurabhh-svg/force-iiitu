@@ -8,6 +8,7 @@ import solana from "../../images/solana.png";
 import replit from "../../images/replit.png";
 import Accordian from "../../Layout/Accordian/Accordian";
 import Row, { Col } from "../../Layout/Responsive";
+import ScrllToTop from "../../components/ScrollToTop/ScrllToTop";
 
 const Progothon = () => {
 	const { setHeaderStyle } = useContext(GlobalContext);
@@ -338,6 +339,7 @@ const Progothon = () => {
 					</div>
 				</section>
 			</main>
+			<ScrllToTop />
 		</main>
 	);
 };
