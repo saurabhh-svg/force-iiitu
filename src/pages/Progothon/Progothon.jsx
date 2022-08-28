@@ -3,7 +3,11 @@ import MaterialIcons from "../../components/MaterialIcons";
 import GlobalContext from "../../Context/GlobalContext";
 import "./progothon.css";
 import progothonBG from "../../images/progothon.jpg";
+import filecoin from "../../images/filecoin.png";
+import solana from "../../images/solana.png";
+import replit from "../../images/replit.png";
 import Accordian from "../../Layout/Accordian/Accordian";
+import Row, { Col } from "../../Layout/Responsive";
 
 const Progothon = () => {
 	const { setHeaderStyle } = useContext(GlobalContext);
@@ -77,6 +81,33 @@ const Progothon = () => {
 			color: "green",
 		},
 	];
+	const sponsors = [
+		{
+			image: filecoin,
+			name: "FileCoin",
+			link: "https://filecoin.io/",
+		},
+		{
+			image: solana,
+			name: "Solana",
+			link: "https://solana.com/",
+		},
+		{
+			image: replit,
+			name: "Replit",
+			link: "https://replit.com/",
+		},
+	];
+	useEffect(() => {
+		const script = document.createElement("script");
+		script.src = "https://apply.devfolio.co/v2/sdk.js";
+		script.async = true;
+		script.defer = true;
+		document.body.appendChild(script);
+		return () => {
+			document.body.removeChild(script);
+		};
+	}, []);
 	useEffect(() => {
 		setHeaderStyle({
 			color: "var(--white)",
@@ -111,11 +142,26 @@ const Progothon = () => {
 				}));
 			} else if (
 				window.scrollY >= 250 * vh &&
-				window.scrollY < 325 * vh
+				window.scrollY < 350 * vh
 			) {
 				setAsideBar((p) => ({
 					...p,
 					index: "03",
+					title: "Sponsors",
+					style: {
+						...p.style,
+						position: "fixed",
+						backgroundColor: "var(--blue)",
+						color: "var(--white)",
+					},
+				}));
+			} else if (
+				window.scrollY >= 350 * vh &&
+				window.scrollY < 425 * vh
+			) {
+				setAsideBar((p) => ({
+					...p,
+					index: "04",
 					title: "F.A.Q.s",
 					style: {
 						...p.style,
@@ -147,15 +193,23 @@ const Progothon = () => {
 				<div className="progothon-hero-container">
 					<h1>Prog-o-thon</h1>
 					<h3>For the students, by the students</h3>
-					<button
-						className="progothon-hero-btn"
-						onClick={() => {
-							window.scrollTo(0, window.innerHeight);
-						}}
-					>
-						<MaterialIcons>expand_more</MaterialIcons>
-						<span>Know More</span>
-					</button>
+					<div className="progothon-hero-btn">
+						<div
+							class="apply-button"
+							data-hackathon-slug="YOUR-HACKATHON-SLUG"
+							data-button-theme="light"
+							style={{ height: " 44px", width: "312px" }}
+						></div>
+						<button
+							className="progothon-hero-btn"
+							onClick={() => {
+								window.scrollTo(0, window.innerHeight);
+							}}
+						>
+							<MaterialIcons>expand_more</MaterialIcons>
+							<span>Know More</span>
+						</button>
+					</div>
 				</div>
 			</section>
 			<main className="progothon-body">
@@ -239,6 +293,28 @@ const Progothon = () => {
 									</button>
 								</div>
 							</div>
+						</p>
+					</div>
+					<div className="progothon-body-section">
+						<h1>Our Sponsors</h1>
+						<p className="progothon-sponsors">
+							<Row>
+								{sponsors.map((sponsor, id) => (
+									<Col key={id} lg={50} md={50} sm={100}>
+										<a
+											href={sponsor.link}
+											target="_blank"
+											rel="noreferrer"
+											className="progothon-sponsor"
+										>
+											<img
+												src={sponsor.image}
+												alt={sponsor.name}
+											/>
+										</a>
+									</Col>
+								))}
+							</Row>
 						</p>
 					</div>
 					<div className="progothon-body-section">

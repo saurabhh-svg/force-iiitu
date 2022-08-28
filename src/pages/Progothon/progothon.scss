@@ -24,6 +24,15 @@
 				margin: 1rem 0;
 			}
 		}
+		&-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 2rem;
+			button {
+				margin: 0 1rem;
+			}
+		}
 		h1 {
 			font-size: 3.5rem;
 			line-height: 4rem;
@@ -34,9 +43,11 @@
 			line-height: 2.5rem;
 		}
 		button {
-			background-color: var(--pink);
-			border-radius: 500px;
-			padding: 0.875rem 1.35rem;
+			height: 2.75rem;
+			background-color: transparent;
+			outline: 2px solid var(--blue);
+			border-radius: 4px;
+			padding: 0 1.35rem;
 			display: inline-flex;
 			align-items: center;
 			span {
@@ -141,5 +152,32 @@
 		position: static;
 		top: 0;
 		left: 0;
+	}
+	&-sponsors {
+		width: 100%;
+	}
+	&-sponsor {
+		height: 10rem;
+		width: 15rem;
+		position: relative;
+		border-radius: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		cursor: pointer;
+		text-decoration: none;
+		img {
+			width: 100%;
+			aspect-ratio: 1/1;
+			object-fit: contain;
+			transition: transform 400ms, filter 400ms;
+		}
+		&:is(:hover, :focus) {
+			box-shadow: var(--shadow-elevation-4dp);
+			& > img {
+				transform: scale(1.1);
+			}
+		}
 	}
 }
