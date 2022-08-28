@@ -321,7 +321,7 @@ const Progothon = () => {
 					</div>
 					<div className="progothon-body-section">
 						<h1>Frequnetly Asked Questions</h1>
-						<p>
+						<p className="progothon-faqs">
 							{faqs.map((faq, id) => (
 								<Accordian
 									summary={faq.question}

@@ -170,6 +170,7 @@
   position: static;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 .progothon-aside-container {
   width: fit-content;
@@ -188,6 +189,7 @@
 @media (max-width: 672px) {
   .progothon-aside-container {
     transform: none;
+    font-size: 3.75rem;
   }
 }
 .progothon-aside span:first-child {
@@ -231,6 +233,14 @@
 }
 .progothon-sponsor:is(:hover, :focus) > img {
   transform: scale(1.1);
+}
+.progothon-faqs {
+  width: 100%;
+}
+@media (max-width: 672px) {
+  .progothon-faqs .accordian {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=progothon.css.map */

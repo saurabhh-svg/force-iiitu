@@ -118,16 +118,18 @@ const Home = () => {
 					data-aos="fade-right"
 				>
 					<h1 style={{ color: "var(--indigo-100)" }}>Prog-o-Thon</h1>
-					<Button
-						variant="outline"
-						text={
-							<>
-								Visit Page <ArrowRight />
-							</>
-						}
-						link="/event/progothon"
-						color="light-blue"
-					/>
+					{!breakpoint("mobile") && (
+						<Button
+							variant="outline"
+							text={
+								<>
+									Visit Page <ArrowRight />
+								</>
+							}
+							link="/event/progothon"
+							color="light-blue"
+						/>
+					)}
 				</div>
 				<div className="home-progothon-body">
 					<div className="home-progothon-body-container">
