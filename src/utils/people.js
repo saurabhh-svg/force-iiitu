@@ -795,7 +795,7 @@ let allPeople = [
 			"https://drive.google.com/open?id=1AkT4yzxA_GF7ggV7kHOV0ZL0UagUbEe-",
 	},
 	{
-		"`": "8/18/2022 15:28:37",
+		"`": "8/18/2022 15:38:37",
 		"Email Address": "20155@iiitu.ac.in",
 		Name: "Sayak Mondal",
 		"Roll No.": 20155,
@@ -806,10 +806,98 @@ let allPeople = [
 			"Whenever you don't win make sure you learn...",
 		"Instagram username": "ig_d3monic",
 		"LinkedIn Username": "sayak-mondal-b70384200",
-		"Twitter Username": "@ig_d3monic",
+		"Twitter Username": "ig_d3monic",
 		"Phone No.": 8373082231,
 		"Profile Photo (preferably focused on face)":
 			"https://drive.google.com/open?id=1yXKiFnWKF3rDR3iCsxis_L1dl_E_ZMoD",
+	},
+	{
+		"`": "8/18/2022 15:50:58",
+		"Email Address": "20318@iiitu.ac.in",
+		Name: "Divyansh Jindal",
+		"Roll No.": 20318,
+		"Personal Email": "divyanshjindal18@gmail.com",
+		"Designation(E.g:- Web Developer, Graphic Designer, CP, etc)":
+			"Flutter Developer",
+		"A one liner to describe yourself.(E.g:- I am an avid learner, always on the hunt for new experiences)":
+			"I am an avid learner",
+		"Instagram username": "_divyansh.jindal_",
+		"LinkedIn Username":
+			"https://www.linkedin.com/in/divyansh-jindal-449641201/",
+		"Twitter Username": "",
+		"Phone No.": 9041574035,
+		"Profile Photo (preferably focused on face)":
+			"https://drive.google.com/open?id=1J7a7OUNmpIH0ROvOFhRQHZkNX2S2Yf_Y",
+	},
+	{
+		"`": "8/18/2022 19:23:25",
+		"Email Address": "20225@iiitu.ac.in",
+		Name: "Nikhil Bhatia",
+		"Roll No.": 20225,
+		"Personal Email": "nickbhatia2002@gmail.com",
+		"Designation(E.g:- Web Developer, Graphic Designer, CP, etc)":
+			"Full stack Web Developer",
+		"A one liner to describe yourself.(E.g:- I am an avid learner, always on the hunt for new experiences)":
+			"I would describe myself as innovative, creative, adaptable to change, a fast learner, and someone who is prepared to go above and beyond what is required as a bear minimum",
+		"Instagram username": "bhatia_ji99",
+		"LinkedIn Username": "Nikhil Bhatia",
+		"Twitter Username": "NikhilB63329083",
+		"Phone No.": 8440017893,
+		"Profile Photo (preferably focused on face)":
+			"https://drive.google.com/open?id=1uown-mXI-bWWjLIx4kmEEScGqP8B4rPA",
+	},
+	{
+		"`": "8/18/2022 19:51:50",
+		"Email Address": "20236@iiitu.ac.in",
+		Name: "Rohit Kumar Gupta",
+		"Roll No.": 20236,
+		"Personal Email": "anishgupta8004@gmail.com",
+		"Designation(E.g:- Web Developer, Graphic Designer, CP, etc)":
+			"Web Developer and CP",
+		"A one liner to describe yourself.(E.g:- I am an avid learner, always on the hunt for new experiences)":
+			"Tech Enthusiast",
+		"Instagram username": "rohitrocks1000",
+		"LinkedIn Username": "Rohit kumar Gupta",
+		"Twitter Username": "",
+		"Phone No.": 9305737479,
+		"Profile Photo (preferably focused on face)":
+			"https://drive.google.com/open?id=1iny9QDV5CpX9BTAAYtK5QxavVwKOQmde",
+	},
+	{
+		"`": "8/24/2022 14:22:06",
+		"Email Address": "20162@iiitu.ac.in",
+		Name: "Vansh Singh",
+		"Roll No.": 20162,
+		"Personal Email": "vanshsingh1617@gmail.com",
+		"Designation(E.g:- Web Developer, Graphic Designer, CP, etc)":
+			"SDE, Full Stack Web Developer, UI/UX Designer",
+		"A one liner to describe yourself.(E.g:- I am an avid learner, always on the hunt for new experiences)":
+			"na",
+		"Instagram username": "https://www.instagram.com/va1nsh_?r=nametag",
+		"LinkedIn Username": "https://www.linkedin.com/in/vansh-singh-0414",
+		"Twitter Username":
+			"https://twitter.com/V_a1nsh14?t=tk7f5TzeTf1QKGEui6sf6Q&s=09",
+		"Phone No.": 9569649636,
+		"Profile Photo (preferably focused on face)":
+			"https://drive.google.com/open?id=1Y7hjgUMF_tgWh-f-jveOP9uV6peM7Fd0",
+	},
+	{
+		"`": "8/24/2022 17:34:11",
+		"Email Address": "20220@iiitu.ac.in",
+		Name: "Mohit Bagdi",
+		"Roll No.": 20220,
+		"Personal Email": "mohitbagdi280@gmail.com",
+		"Designation(E.g:- Web Developer, Graphic Designer, CP, etc)":
+			"Graphic Designer",
+		"A one liner to describe yourself.(E.g:- I am an avid learner, always on the hunt for new experiences)":
+			"Some time I roar",
+		"Instagram username": "edito0",
+		"LinkedIn Username":
+			"(Mohit bagdi)https://www.linkedin.com/in/mohit-bagdi-356463240",
+		"Twitter Username": "",
+		"Phone No.": 9351731524,
+		"Profile Photo (preferably focused on face)":
+			"https://drive.google.com/open?id=1b9rjhJlBQPXGEv4a3zQ_Be1l8fadyIIW",
 	},
 ];
 

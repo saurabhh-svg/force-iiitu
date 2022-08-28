@@ -57,7 +57,7 @@ parsedTeam.forEach((e) => {
 });
 
 let cooridnators = [];
-let executives = [];
+let volunteers = [];
 let mentors = [];
 let office = [];
 
@@ -66,7 +66,7 @@ team.forEach((member) => {
 	else if (member.email.slice(0, 2) === "20")
 		cooridnators = [...cooridnators, member];
 	else if (member.email.slice(0, 2) === "21")
-		executives = [...executives, member];
+		volunteers = [...volunteers, member];
 	if (
 		member.email === "19331@iiitu.ac.in" ||
 		member.email === "19137@iiitu.ac.in" ||
@@ -92,7 +92,7 @@ let faculty = [
 	},
 ];
 
-export { cooridnators, executives, mentors, office, faculty };
+export { cooridnators, volunteers, mentors, office, faculty };
 
 team = [
 	{
@@ -112,8 +112,8 @@ team = [
 		members: cooridnators,
 	},
 	{
-		title: "Executive Members",
-		members: executives,
+		title: "Volunteers",
+		members: volunteers,
 	},
 ];
 
