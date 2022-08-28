@@ -16,7 +16,12 @@ const About = () => {
 	}, [setHeaderStyle]);
 	return (
 		<main className="home">
-			<div style={{ height: "var(--head-height)" }}></div>
+			<div
+				style={{
+					height: "var(--head-height)",
+					minHeight: "var(--head-height)",
+				}}
+			></div>
 			<section className="home-about">
 				<Dots className="home-about-topimg" />
 				<div className="home-about-head" data-aos="fade-right">

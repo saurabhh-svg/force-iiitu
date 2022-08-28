@@ -1,5 +1,5 @@
 :root {
-	--accordian-bgcolor: #e1e1e1;
+	--accordian-bgcolor: var(--bgcolor);
 	--accordian-transition-time: 200ms;
 }
 
@@ -12,8 +12,8 @@
 	overflow: hidden;
 	border-radius: 0.25rem;
 	transition: all var(--accordian-transition-time) ease-in-out;
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
-		rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+	margin: 0.1rem 0;
 	& > * {
 		width: 100%;
 		padding: 1rem;
@@ -52,15 +52,15 @@
 	}
 	&-expand {
 		&-false {
-			margin: 0.025rem auto;
+			margin: 0.075rem auto;
 		}
 		&-true {
-			margin: 0.75rem auto;
+			margin: 0.1rem auto;
 		}
 	}
 	&-expand-false &-header {
 		height: 3.5rem;
-		&-expand-false &-header-icon .material-symbols-outlined {
+		&-icon .material-symbols-outlined {
 			transform: rotateZ(-180deg);
 		}
 	}
@@ -79,9 +79,11 @@
 		visibility: visible;
 		padding: 1rem;
 	}
-    li{
-        &::marker{
-            
-        }
-    }
+	ul {
+		list-style: ">";
+		li {
+			margin-left: 1rem;
+			padding-left: 1rem;
+		}
+	}
 }
