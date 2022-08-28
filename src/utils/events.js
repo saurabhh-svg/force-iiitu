@@ -10,7 +10,7 @@ const events = [
 		title: "Prog-o-thon",
 		subtitle: "Explore Open Source",
 		description: "For the students, by the students",
-		link: "/event/Prog-o-thon",
+		link: "/event/progothon",
 		image: progothon,
 		background: progothonBG,
 		color: "var(--indigo)",
