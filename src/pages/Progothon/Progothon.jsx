@@ -27,24 +27,29 @@ const Progothon = () => {
 	const vh = window.innerHeight / 100;
 	const faqs = [
 		{
-			question: "How to register for the event?",
-			answer: "For registering in the event you need to go to the website of Cybernauts and click on register.You will be redirected to the application form.",
+			question: "How many participants per team are allowed?",
+			answer: "Maximum 3 participants in each team.",
 		},
 		{
-			question: "How can I apply for project lead?",
-			answer: "For applying as a project lead you need to register for the event and submit your project idea.The selection will be based on certain criteria.",
+			question: "Can a team consist of students from different colleges?",
+			answer: "No, each member must be from the same college.",
 		},
 		{
-			question: "What will be the selection criteria for the event?",
-			answer: "There is no selection criteria for the participants but the project leads will be selected on the basis of their project ideas ,skillset , knowledge of domain , and experience.",
+			question: "Are there any restrictions on branches?",
+			answer: "No, participants can be from any branch.",
 		},
 		{
-			question: "When will the contribution period begin?",
-			answer: "The contribution period will begin from 2nd half of October.",
+			question:
+				"Does each team member in a team be from the same year of college?",
+			answer: "No, the team can be made up of members from different years.",
 		},
 		{
-			question: "How long will be the contribution period?",
-			answer: "The contribution period will be 2 months long i.e. from October To December",
+			question: "How long will this Prog-a-thon run?",
+			answer: "Its duration is 48 hours.",
+		},
+		{
+			question: "Will Prog-a-thon be conducted online or offline?",
+			answer: "It is an offline/In-Person Hackathon.",
 		},
 	];
 	const schedule = [
@@ -54,7 +59,7 @@ const Progothon = () => {
 			day: "Tuesday",
 			time: "15.00 - 17.00",
 			description:
-				"ID distribution for participants and coordinators / Venue allocation / Slot distribution",
+				"Distribution of IDs to all participants and event coordinators.",
 			color: "brown",
 		},
 		{
@@ -62,7 +67,7 @@ const Progothon = () => {
 			month: "Sept",
 			day: "Tuesday-Wednesday",
 			time: "17.00 - 20.00",
-			description: "First Day for event",
+			description: "First day of Prog-a-thon",
 			color: "blue",
 		},
 		{
@@ -70,7 +75,7 @@ const Progothon = () => {
 			month: "Sept",
 			day: "Wednesday-Thursday",
 			time: "17.00 - 20.00",
-			description: "Second Day for event",
+			description: "Second day of Prog-a-thon",
 			color: "blue",
 		},
 		{
@@ -78,7 +83,8 @@ const Progothon = () => {
 			month: "Sept",
 			day: "Thursday",
 			time: "9.00 - 11.00",
-			description: "Demo + Result",
+			description:
+				"Demonstration of each team's solution and results declaration",
 			color: "green",
 		},
 	];
@@ -98,6 +104,12 @@ const Progothon = () => {
 			name: "Replit",
 			link: "https://replit.com/",
 		},
+	];
+	const rules = [
+		"The number of members on each participating team is limited to three.",
+		"It is a 48-hour In-Person hackathon.",
+		"The panel of judges will focus on innovative solutions, technical aspects, working demonstrations, and FAQs.",
+		"Each team will have 15 minutes to demonstrate their innovative solutions.",
 	];
 	useEffect(() => {
 		const script = document.createElement("script");
@@ -133,11 +145,11 @@ const Progothon = () => {
 				setAsideBar((p) => ({
 					...p,
 					index: "02",
-					title: "Schedule",
+					title: "Rules",
 					style: {
 						...p.style,
 						position: "fixed",
-						backgroundColor: "var(--green)",
+						backgroundColor: "var(--indigo)",
 						color: "var(--white)",
 					},
 				}));
@@ -148,6 +160,21 @@ const Progothon = () => {
 				setAsideBar((p) => ({
 					...p,
 					index: "03",
+					title: "Schedule",
+					style: {
+						...p.style,
+						position: "fixed",
+						backgroundColor: "var(--green)",
+						color: "var(--white)",
+					},
+				}));
+			} else if (
+				window.scrollY >= 350 * vh &&
+				window.scrollY < 450 * vh
+			) {
+				setAsideBar((p) => ({
+					...p,
+					index: "04",
 					title: "Sponsors",
 					style: {
 						...p.style,
@@ -157,12 +184,12 @@ const Progothon = () => {
 					},
 				}));
 			} else if (
-				window.scrollY >= 350 * vh &&
-				window.scrollY < 425 * vh
+				window.scrollY >= 450 * vh &&
+				window.scrollY < 525 * vh
 			) {
 				setAsideBar((p) => ({
 					...p,
-					index: "04",
+					index: "05",
 					title: "F.A.Q.s",
 					style: {
 						...p.style,
@@ -224,12 +251,29 @@ const Progothon = () => {
 					<div className="progothon-body-section">
 						<h1>About Prog-o-thon</h1>
 						<p>
-							Prog-o-thon is an initiative by the Technical Clubs
-							of IIIT Una to allow students to experience the
-							power of open source. It is a 2 month program where
-							the ideas submitted by you will be selected and the
-							participants will be given chance to work on them
-							with awesome mentors
+							In conjunction with the Technical Fest 2022, the
+							Indian Institute of Information Technology Una will
+							host the first-ever biggest hackathon,
+							‘Prog-a-thon’.
+							<br />
+							Prog-a-thon is a hackathon that aims to solve
+							institute-specific problems such as problem
+							statements for attendance systems and other
+							real-world issues. It is the intent of this
+							hackathon to solve real-world problems as well as to
+							help students gain teamwork experience, knowledge,
+							and motivation to solve problems in their technical
+							careers ahead.
+						</p>
+					</div>
+					<div className="progothon-body-section">
+						<h1>Rules</h1>
+						<p>
+							<ul>
+								{rules.map((rule, id) => (
+									<li key={id}>{rule}</li>
+								))}
+							</ul>
 						</p>
 					</div>
 					<div className="progothon-body-section">

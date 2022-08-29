@@ -77,6 +77,9 @@
   flex-flow: column;
   height: 100vh;
 }
+.progothon-body-section li::marker {
+  content: " > ";
+}
 .progothon-body-content {
   width: 60%;
   padding: 3rem;
