@@ -26,6 +26,13 @@
 .progothon-hero-container > * {
   margin: 1rem 0;
 }
+.progothon-hero-image {
+  height: 30%;
+}
+.progothon-hero-image img {
+  width: 35vh;
+  height: 35vh;
+}
 .progothon-hero-btn {
   display: flex;
   justify-content: center;
@@ -38,6 +45,11 @@
 }
 .progothon-hero-btn button {
   margin: 2rem 1rem;
+}
+@media (max-width: 672px) {
+  .progothon-hero-btn button {
+    margin: 1rem;
+  }
 }
 .progothon-hero h1 {
   font-size: 3.5rem;
@@ -57,6 +69,12 @@
   display: inline-flex;
   align-items: center;
   flex-flow: row;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.progothon-hero button:first-child {
+  background-color: var(--blue-700);
+  outline-color: var(--blue-700);
 }
 @media (max-width: 672px) {
   .progothon-hero button {
@@ -89,10 +107,22 @@
   line-height: 3.5rem;
   margin: 1rem 0;
 }
+@media (max-width: 672px) {
+  .progothon-body-content h1 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
 .progothon-body-content p {
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin: 1rem 0;
+}
+@media (max-width: 672px) {
+  .progothon-body-content p {
+    font-size: 1.65rem;
+    line-height: 2.25rem;
+  }
 }
 @media (max-width: 880px) {
   .progothon-body-content {
@@ -158,6 +188,66 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.progothon-rewards {
+  height: 60%;
+}
+.progothon-reward {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+@media (max-width: 672px) {
+  .progothon-reward {
+    margin: 0.5rem 0;
+  }
+}
+.progothon-reward-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+@media (max-width: 672px) {
+  .progothon-reward-content {
+    width: 45%;
+    align-items: flex-start;
+    margin-left: 0.875rem;
+  }
+}
+@media (max-width: 672px) {
+  .progothon-reward {
+    flex-flow: row;
+  }
+}
+.progothon-reward img {
+  width: 70%;
+  height: auto;
+}
+@media (max-width: 672px) {
+  .progothon-reward img {
+    width: 55%;
+  }
+}
+.progothon-reward h2 {
+  margin: 1.125rem 0;
+  white-space: nowrap;
+}
+@media (max-width: 672px) {
+  .progothon-reward h2 {
+    font-size: 1.75rem;
+  }
+}
+.progothon-reward h4 {
+  margin: 0 0 0.35rem 0;
+}
+@media (max-width: 672px) {
+  .progothon-reward h4 {
+    font-size: 1.35rem;
+  }
 }
 .progothon-aside {
   width: 40%;

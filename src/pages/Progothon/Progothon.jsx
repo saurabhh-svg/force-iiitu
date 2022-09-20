@@ -3,15 +3,16 @@ import MaterialIcons from "../../components/MaterialIcons";
 import GlobalContext from "../../Context/GlobalContext";
 import "./progothon.css";
 import progothonBG from "../../images/progothon.jpg";
-import filecoin from "../../images/filecoin.png";
-import solana from "../../images/solana.png";
-import replit from "../../images/replit.png";
 import Accordian from "../../Layout/Accordian/Accordian";
 import Row, { Col } from "../../Layout/Responsive";
 import ScrllToTop from "../../components/ScrollToTop/ScrllToTop";
+import gold from "../../images/gold.svg";
+import silver from "../../images/silver.svg";
+import bronze from "../../images/bronze.svg";
+import merakiLogo from "../../images/meraki.png";
 
 const Progothon = () => {
-	const { setHeaderStyle } = useContext(GlobalContext);
+	const { setHeaderStyle, breakpoint } = useContext(GlobalContext);
 	const [asideBar, setAsideBar] = useState({
 		style: {
 			position: "unset",
@@ -88,21 +89,21 @@ const Progothon = () => {
 			color: "green",
 		},
 	];
-	const sponsors = [
+	const rewards = [
 		{
-			image: filecoin,
-			name: "FileCoin",
-			link: "https://filecoin.io/",
+			image: gold,
+			name: "Winner",
+			amount: "INR 9000/-",
 		},
 		{
-			image: solana,
-			name: "Solana",
-			link: "https://solana.com/",
+			image: silver,
+			name: "Runner Up",
+			amount: "INR 6000/-",
 		},
 		{
-			image: replit,
-			name: "Replit",
-			link: "https://replit.com/",
+			image: bronze,
+			name: "2nd Runner Up",
+			amount: "INR 3000/-",
 		},
 	];
 	const rules = [
@@ -175,7 +176,7 @@ const Progothon = () => {
 				setAsideBar((p) => ({
 					...p,
 					index: "04",
-					title: "Sponsors",
+					title: "Rewards",
 					style: {
 						...p.style,
 						position: "fixed",
@@ -219,15 +220,23 @@ const Progothon = () => {
 				}}
 			>
 				<div className="progothon-hero-container">
+					<div className="progothon-hero-image">
+						<img src={merakiLogo} alt="Meraki" />
+					</div>
 					<h1>Prog-o-thon</h1>
 					<h3>For the students, by the students</h3>
 					<div className="progothon-hero-btn">
-						<div
-							className="apply-button"
-							data-hackathon-slug="YOUR-HACKATHON-SLUG"
-							data-button-theme="light"
-							style={{ height: " 44px", width: "312px" }}
-						></div>
+						<button
+							className="progothon-hero-btn"
+							onClick={() => {
+								window.open(
+									"https://forms.gle/4ByyK1qqwhuS3zfi8",
+									"_blank"
+								);
+							}}
+						>
+							<span>Register Now 🔥</span>
+						</button>
 						<button
 							className="progothon-hero-btn"
 							onClick={() => {
@@ -250,7 +259,12 @@ const Progothon = () => {
 				<section className="progothon-body-content">
 					<div className="progothon-body-section">
 						<h1>About Prog-o-thon</h1>
-						<p>
+						<p
+							style={{
+								width: "80%",
+								lineHeight: "1.875rem",
+							}}
+						>
 							In conjunction with the Technical Fest 2022, the
 							Indian Institute of Information Technology Una will
 							host the first-ever biggest hackathon,
@@ -343,24 +357,50 @@ const Progothon = () => {
 						</p>
 					</div>
 					<div className="progothon-body-section">
-						<h1>Our Sponsors</h1>
-						<p className="progothon-sponsors">
+						<h1>Rewards</h1>
+						<p className="progothon-rewards">
 							<Row>
-								{sponsors.map((sponsor, id) => (
-									<Col key={id} lg={50} md={50} sm={100}>
-										<a
-											href={sponsor.link}
-											target="_blank"
-											rel="noreferrer"
-											className="progothon-sponsor"
-										>
-											<img
-												src={sponsor.image}
-												alt={sponsor.name}
-											/>
-										</a>
-									</Col>
-								))}
+								<Col lg={100} md={100} sm={100}>
+									<div className="progothon-reward">
+										<img
+											src={rewards[0].image}
+											alt={rewards[0].name}
+											style={{
+												width: breakpoint("mobile")
+													? "55%"
+													: "50%",
+											}}
+										/>
+										<div className="progothon-reward-content">
+											<h2>{rewards[0].name}</h2>
+											<h4>{rewards[0].amount}</h4>
+										</div>
+									</div>
+								</Col>
+								<Col lg={50} md={50} sm={100}>
+									<div className="progothon-reward">
+										<img
+											src={rewards[1].image}
+											alt={rewards[1].name}
+										/>
+										<div className="progothon-reward-content">
+											<h2>{rewards[1].name}</h2>
+											<h4>{rewards[1].amount}</h4>
+										</div>
+									</div>
+								</Col>
+								<Col lg={50} md={50} sm={100}>
+									<div className="progothon-reward">
+										<img
+											src={rewards[2].image}
+											alt={rewards[2].name}
+										/>
+										<div className="progothon-reward-content">
+											<h2>{rewards[2].name}</h2>
+											<h4>{rewards[2].amount}</h4>
+										</div>
+									</div>
+								</Col>
 							</Row>
 						</p>
 					</div>
