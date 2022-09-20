@@ -22,21 +22,17 @@ const Contact = () => {
 		const { name, value } = e.target;
 		setUser((p) => ({ ...p, [name]: value }));
 	};
-	const handleSubmit = (e) => {
-		e?.preventDefault();
-		console.log(user);
-		setUser({
-			name: "",
-			email: "",
-			message: "",
-		});
-	};
 	return (
 		<main className="contact">
 			<section className="contact-container" data-aos="zoom-in">
 				<div className="contact-left">
 					<h1>Get In Touch</h1>
-					<form className="contact-form" onSubmit={handleSubmit}>
+					<form
+						className="contact-form"
+						data-netlify="true"
+						method="POST"
+						netlify
+					>
 						<input
 							type="text"
 							placeholder="Type your full name"
@@ -62,6 +58,7 @@ const Contact = () => {
 							value={user.message}
 							onChange={handleChange}
 						></textarea>
+						<input type="hidden" name="form-name" value="contact" />
 						<Button
 							type="submit"
 							text="Send Message"

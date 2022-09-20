@@ -16,15 +16,6 @@ const Footer = () => {
 		const { name, value } = e.target;
 		setUser((p) => ({ ...p, [name]: value }));
 	};
-	const handleSubmit = (e) => {
-		e?.preventDefault();
-		console.log(user);
-		setUser({
-			name: "",
-			email: "",
-			message: "",
-		});
-	};
 	return (
 		<footer
 			className="footer"
@@ -40,7 +31,13 @@ const Footer = () => {
 			<div className="footer-head">Get In Touch</div>
 			<div className="footer-body">
 				<div className="footer-body-left">
-					<form className="footer-form" onSubmit={handleSubmit}>
+					<form
+						name="contact"
+						className="footer-form"
+						data-netlify="true"
+						method="POST"
+						netlify
+					>
 						<input
 							type="text"
 							placeholder="Type your full name"
@@ -66,6 +63,7 @@ const Footer = () => {
 							value={user.message}
 							onChange={handleChange}
 						></textarea>
+						<input type="hidden" name="form-name" value="contact" />
 						<Button
 							type="submit"
 							text="Send Message"
@@ -94,7 +92,16 @@ const Footer = () => {
 			</div>
 			<div className="footer-foot">
 				<div className="footer-foot-made">
-					<span>Made with ❤ by Development team.</span>
+					<span>
+						Made with ❤ by{" "}
+						<a
+							href="https://akshatmittal61.vercel.app/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Akshat Mittal
+						</a>
+					</span>
 				</div>
 				<div className="footer-foot-nav">
 					<nav>
