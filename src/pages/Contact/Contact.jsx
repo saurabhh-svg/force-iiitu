@@ -3,6 +3,7 @@ import Button from "../../components/Button/Button";
 import GlobalContext from "../../Context/GlobalContext";
 import socials from "../../utils/socials";
 import contactBanner from "../../images/contact.svg";
+import emailjs from "emailjs-com";
 import "./contact.css";
 
 const Contact = () => {
@@ -22,17 +23,29 @@ const Contact = () => {
 		const { name, value } = e.target;
 		setUser((p) => ({ ...p, [name]: value }));
 	};
+	const handleSubmit = (e) => {
+		e?.preventDefault();
+		emailjs
+			.sendForm(
+				process.env.REACT_APP_SERVICE,
+				process.env.REACT_APP_TEMPLATE,
+				e.target,
+				process.env.REACT_APP_USER
+			)
+			.then((res) => console.log(res))
+			.catch((err) => console.log(err));
+		setUser({
+			name: "",
+			email: "",
+			message: "",
+		});
+	};
 	return (
 		<main className="contact">
 			<section className="contact-container" data-aos="zoom-in">
 				<div className="contact-left">
 					<h1>Get In Touch</h1>
-					<form
-						className="contact-form"
-						data-netlify="true"
-						method="POST"
-						netlify
-					>
+					<form className="contact-form" onSubmit={handleSubmit}>
 						<input
 							type="text"
 							placeholder="Type your full name"
@@ -58,7 +71,6 @@ const Contact = () => {
 							value={user.message}
 							onChange={handleChange}
 						></textarea>
-						<input type="hidden" name="form-name" value="contact" />
 						<Button
 							type="submit"
 							text="Send Message"

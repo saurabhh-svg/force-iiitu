@@ -45,6 +45,10 @@
 }
 .progothon-hero-btn button {
   margin: 2rem 1rem;
+  overflow: hidden;
+}
+.progothon-hero-btn button img {
+  width: 24px;
 }
 @media (max-width: 672px) {
   .progothon-hero-btn button {
@@ -123,6 +127,9 @@
     font-size: 1.65rem;
     line-height: 2.25rem;
   }
+}
+.progothon-body-content li {
+  margin: 0.5rem 0;
 }
 @media (max-width: 880px) {
   .progothon-body-content {

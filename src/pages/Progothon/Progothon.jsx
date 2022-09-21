@@ -113,16 +113,6 @@ const Progothon = () => {
 		"Each team will have 15 minutes to demonstrate their innovative solutions.",
 	];
 	useEffect(() => {
-		const script = document.createElement("script");
-		script.src = "https://apply.devfolio.co/v2/sdk.js";
-		script.async = true;
-		script.defer = true;
-		document.body.appendChild(script);
-		return () => {
-			document.body.removeChild(script);
-		};
-	}, []);
-	useEffect(() => {
 		setHeaderStyle({
 			color: "var(--white)",
 		});
@@ -261,8 +251,8 @@ const Progothon = () => {
 						<h1>About Prog-o-thon</h1>
 						<p
 							style={{
-								width: "80%",
-								lineHeight: "1.875rem",
+								width: breakpoint("mobile") ? "95%" : "80%",
+								lineHeight: "2rem",
 							}}
 						>
 							In conjunction with the Technical Fest 2022, the

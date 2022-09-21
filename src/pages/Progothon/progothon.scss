@@ -52,6 +52,11 @@
 
 			button {
 				margin: 2rem 1rem;
+				overflow: hidden;
+
+				img {
+					width: 24px;
+				}
 
 				@include respond(phone) {
 					margin: 1rem;
@@ -139,6 +144,9 @@
 					font-size: 1.65rem;
 					line-height: 2.25rem;
 				}
+			}
+			li{
+				margin: 0.5rem 0;
 			}
 
 			@include respond(tab) {

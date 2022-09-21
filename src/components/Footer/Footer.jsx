@@ -5,6 +5,7 @@ import socials from "../../utils/socials";
 import navLinks from "../../utils/navigation";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
+import emailjs from "emailjs-com";
 
 const Footer = () => {
 	const [user, setUser] = useState({
@@ -15,6 +16,23 @@ const Footer = () => {
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setUser((p) => ({ ...p, [name]: value }));
+	};
+	const handleSubmit = (e) => {
+		e?.preventDefault();
+		emailjs
+			.sendForm(
+				process.env.REACT_APP_SERVICE,
+				process.env.REACT_APP_TEMPLATE,
+				e.target,
+				process.env.REACT_APP_USER
+			)
+			.then((res) => console.log(res))
+			.catch((err) => console.log(err));
+		setUser({
+			name: "",
+			email: "",
+			message: "",
+		});
 	};
 	return (
 		<footer
@@ -34,9 +52,7 @@ const Footer = () => {
 					<form
 						name="contact"
 						className="footer-form"
-						data-netlify="true"
-						method="POST"
-						netlify
+						onSubmit={handleSubmit}
 					>
 						<input
 							type="text"
@@ -63,7 +79,6 @@ const Footer = () => {
 							value={user.message}
 							onChange={handleChange}
 						></textarea>
-						<input type="hidden" name="form-name" value="contact" />
 						<Button
 							type="submit"
 							text="Send Message"
