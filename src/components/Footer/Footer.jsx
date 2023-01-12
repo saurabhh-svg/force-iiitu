@@ -108,14 +108,7 @@ const Footer = () => {
 			<div className="footer-foot">
 				<div className="footer-foot-made">
 					<span>
-						Made with ❤ by{" "}
-						<a
-							href="https://akshatmittal61.vercel.app/"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Akshat Mittal
-						</a>
+						Made with ❤ by Development Team
 					</span>
 				</div>
 				<div className="footer-foot-nav">
