@@ -121,6 +121,23 @@ let allPeople = [
 			"https://drive.google.com/open?id=1cA1K3MzxQVj1moxjH324TLEgLlequtey",
 	},
 	{
+		"`": "8/8/2022 22:50:06",
+		"Email Address": "20102@iiitu.ac.in",
+		Name: "Abhinam",
+		"Roll No.": 20102,
+		"Personal Email": "abhinamkhatiyan806@gmail.com",
+		"Designation(E.g:- Backend Developer, Software Developer, CP, etc)":
+			"Coordinator (Web Developer)",
+		"A one liner to describe yourself.(E.g:- I am an avid learner, always on the hunt for new experiences)":
+			"I am a tech enthusiast who loves to learn an implement new technologies, solve problems and build solutions that contribute to a better future.",
+		"Instagram username": "abhhiii11",
+		"LinkedIn Username": "https://www.linkedin.com/in/abhinam-khatiyan-56041424a/",
+		"Twitter Username": "",
+		"Phone No.": "+917037832111",
+		"Profile Photo (preferably focused on face)":
+			"",
+	},
+	{
 		"`": "8/3/2022 0:15:27",
 		"Email Address": "19331@iiitu.ac.in",
 		Name: "Umang sharma",
